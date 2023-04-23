@@ -1,0 +1,39 @@
+
+header{
+	height:100px;
+	width:100%;
+	background-color:blue;
+	
+	
+	
+}
+nav{
+	background-color:black;
+	height:50px;
+	width:500px;
+	position:relative;
+	left:30%;
+}
+nav li{
+	list-style-type:none;
+	/*list-style-type listeleirn madde imlerini özelleştirmeye yarar none disk circle square decimal gibi değerler alır.*/
+	margin:10px;
+	padding:5px;
+	float:left;
+	
+	
+}
+nav li a{
+	
+	background-color:black;
+	color:white;
+	border:5px;
+	border-color:red;
+	font-family:arial;
+	font-size:20px;
+	text-decoration:none;
+	
+	/*text-decoration yazıların dekorasyonlarını değiştirmek için kaldırmak için kullanılır*/
+	
+	
+}

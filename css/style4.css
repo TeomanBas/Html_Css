@@ -1,0 +1,128 @@
+.den1{
+	border-style:inset;
+	border-width:10px;
+	border-color:red;
+	min-width:200px;
+	max-width:30%;
+	min-height:20%;
+	max-height:500px;
+	background-color:gray;
+	background-image:url(../images/w3.png) ;
+	background-repeat:no-repeat;
+	background-attachment:scroll;
+	background-position:center;
+	margin-left:25%;
+	padding-top:5%;
+	padding-bottom:5%;
+	padding-left:5%;
+	padding-right:5%;
+	/*3 adet box sizin kullanıldığında farklı tarayıcılarda da çalışması sağlanır box sizing  herhangi bir elemente padding ve border
+	eklendiğinde bulunan elementin boyutunun artmaması için kullanılır o elementin boyutu içeriye doğru artmış olur dışarıdaki elementleri etkilemez.*/
+	box-sizing:border-box;
+	webkit-box-sizing:border-box;
+	moz-box-sizing:border-box;
+	color:white;
+	overflow:auto;
+	
+	
+}
+.den2 , .den3{
+	border:inset;
+	border-width:3px;
+	padding:10px;
+	margin:5px;
+	
+}
+
+.kutu1{
+	background-color:red;
+	height:200px;
+	width:200px;
+	display:inline;
+	
+}
+
+.kutu2{
+	background-color:blue;
+	height:200px;
+	width:200px;
+	display:block;
+}
+
+.kutu3{
+	background-color:green;
+	height:200px;
+	width:200px;
+	display:inline;
+}
+
+.kutu4{
+	background-color:red;
+	height:200px;
+	width:200px;
+	position:relative;
+	/* relative olarak tanımladık ve konumunu bulunduğu yerden hareket ettirdik. budeğerler - olarak girilseydi tam tersi yönde konumu değişirdi.*/
+	left:50px;
+	right:50px;
+	top:50px;
+	
+}
+
+.kutu5{
+	background-color:blue;
+	color:white;
+	height:200px;
+	width:200px;
+	position:fixed;
+	/*kutuyu sağ alt köşeye sabitlemek için fixed olarak tanımladık*/
+	bottom:0px;
+	right:0px;
+	
+}
+
+.kutu6{
+	background-color:green;
+	height:100px;
+	width:100px;
+	position:absolute;
+	bottom:10px;
+	right:10px;
+}
+
+.arka{
+	background-color:yellow;
+	height:500px;
+	width:500px;
+	position:absolute;
+	left:700px;
+	z-index:2;
+}.orta{
+	background-color:cyan;
+	height:500px;
+	width:500px;
+	position:absolute;
+	left:600px;
+
+	
+}.onde{
+	background-color:black;
+	color:white;
+	height:500px;
+	width:500px;
+	position:absolute;
+	left:500px;
+	z-index:-1;
+	
+}
+
+.metin{
+	border-style:inset;
+	border-width:10px;
+	border-color:red;
+	height:500px;
+	width:800px;
+	background-color:gray;
+	position:relative;
+	left:100px;
+	overflow:auto;
+}

@@ -1,0 +1,188 @@
+<!doctype html>
+
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<p>css komutları html tagları birer kutu olarak görür.</p>
+
+<figure>
+<img src="../images/boxmodel-image.png" title="css kutu modeli" alt="css kutu modeli">
+<br/>
+<ficaption>css kutu modeli</ficaption>
+</figure>
+<p>bazı html komutları block olarak çalışır bazı html komutları inline olarak çalışırlar.örneğin block html komutları tüm satırı 
+ kaplarken(hx,p,table gibi ...) inline html komutları sadece bulunuğu bölümü kaplarlar ve inline html elementleri block html elementlerinin içerisinde bulunabilirler.</p>
+ 
+ <figure>
+	<img src="../images/block-inline.png"><br/>
+	<ficaption>block ve inline yapısı ve farkı</ficaption>
+	
+ </figure>
+ 
+ <figure>
+ <img src="../images/block-yapi.jpg"><br/>
+	<ficaption>örnek block ve inline elemetleri</ficaption>
+	</figure>
+	
+	<h1>KUTU KENARLIKLARI</h1>
+	<p>kutu kenarlıklarını kontrol etmek için border özelliği kullanılır.aslında tüm html kodlarının görünümlerinde kenarlıklar vardır. ancak default olarak 0px olduğu için görünmezler.
+	
+	</p>
+	<table border="1px">
+	<tr>
+	<td><b>özellik</b></td>
+	<td><b>alabileceği değerler</b></td>
+	<td><b>açıklama</b></td>
+	</tr>
+	
+	<tr>
+	<td>border-style,border-top-style,border-right-style,border-bottom-style,border-left-style</td>
+	<td>none,solid,dotted,dashed,double,groove,ridge,inset,outset</td>
+	<td>html elemanına değişik tipte çizgiler yapılmasını sağlar</td>
+	</tr>
+	<tr>
+	<td>border-width,border-top-width,border-right-width,border-bottom-width,border-left-width</td>
+	<td>px,thin,medium,thick</td>
+	<td>çizgi kalınlığını ayarlar</td>
+	</tr>
+	<tr>
+	<td>border-color,border-top-color,border-right-color,border-bottom-color,border-left-color</td>
+	<td>renk_adı,#rrggbb,rgb(rrr,ggg,bbb)</td>
+	<td>kenarlık rangini belirler.</td>
+	</tr>
+	</table>
+	
+	<h1>BLOCK DIŞ BOŞLUK</h1>
+	<table border="1px">
+	<tr>
+	<td>özellik</td>
+	<td>değer</td>
+	<td>açıklama</td>
+	
+	</tr>
+	<tr>
+	<td>margin</td>
+	<td>px,%</td>
+	<td>alt,üst,sağ,sol dış boşluklarının hepsi için uzaklığı belirler</td>
+	
+	</tr>
+	<tr>
+	<td>margin-left</td>
+	<td>px,%</td>
+	<td>sol dış boşluğu belirler</td>
+	</tr>
+	<tr>
+	<td>margin-right</td>
+	<td>px,%</td>
+	<td>sağ dış boşluğu belirler</td>
+	</tr>
+	
+	<tr>
+	<td>margin-top</td>
+	<td>px,%</td>
+	<td>üst dış boşluğu belirler</td>
+	
+	</tr>
+	
+	<tr>
+	<td>margin-bottom</td>
+	<td>px,%</td>
+	<td>alt dış boşluğu belirler.</td>
+	</tr>
+	
+	<tr>
+	<td>margin</td>
+	<td>auto</td>
+	<td>blok html komutları sayfanın ortasında görünür.</td>
+	</tr>
+	</table>
+	
+	
+	<h1>KUTU KONUM AYARI</h1>
+	<p>hx p li form table veya fiv gibi komutlarblock davranışına sahiptir ve bulunduklarıyerdeki tüm satırı işgal ederler a , span em b veya i gibi komutlar ise inline davranışa sahiptir.
+	
+	bazı durumlarda inline komutların block ,block komutların inline şeklinde davranış sergilemesini isteriz.css komutları kullanarak inline komutların block şeklinde yada block komutların inline şeklinde davranmasnı sağlayabiliriz.bu sayede bazı html komutlarının sayfadaki konumunu daha kolay ayarlayabilriz.</p>
+	<pre>
+	li{
+	display:inline;
+	}
+	a{
+	display:block;
+	}
+	</pre>
+	
+	
+<p>kutuların sayfada bulundukları yeri belirlemek için position özelliği kullanılır.
+bu özellik sayesinde bir kutunun sayfanın istediğimiz bölgesinde durmasını sağlayabiliriz.
+Örneğin bir kutunun sayfanın en sağında görünmesini sağlayabiliriz.</p>
+
+<table border="1px">
+<tr>
+<td><b>özellik ve değerler</b></td>
+<td><b>açıklama</b></td>
+
+</tr>
+
+<tr>
+<td>position:static;</td>
+<td>her kutunun varsayılan değeridir.
+Static değere sahip kutular nereye konulduysa ortada bulunurlar.
+</td>
+</tr>
+
+<tr>
+<td>position:relative;</td>
+<td>kutunun bulunduğu konumuna göre taşınmasını sağlar yani kutuyu kyulduğu yerden 20px sağa veya 30px saşağı taşıyabiliriz.</td>
+</tr>
+
+<tr>
+<td>position:fixed;</td>
+<td>kutunun sayfaya göre ayarlanmasını sağlar örneğin sayfa üstünden 50px aşağıda ve sayfanın en solundan 50px içerde görünmesini sağlar
+ sayfa kaydırılsa bile aynı konumunu korur örneğin sayfalarını en altında veya en üstünde görünen menüler bu özelliğe sahiptir.</td>
+</tr>
+
+<tr>
+<td>position:absolute;</td>
+<td>başka kutu içinde bulunan kutuları kontrol etmek için kullanılır.içinde bulundğu kutuya göre üstten sağdan alttan ve soldan mesafeler
+ verilerek kutunun konumu ayarlanır.</td>
+</tr>
+
+
+</table>
+	
+	
+	<h1>KUTULARIN ÖNE ALINMASI</h1>
+	<p>bazı durumlarda kutular birbirni örtmekte yada kapatmaktadır.kutuları öne yada arkaya almakta gerkebilir.bunun için z-index kullanılır.yüksek z-index değerine sahip elemanlar daha önde görünür.z-index değeri - olarakta verilebilir.</p>
+	
+	
+	<h1>KUTU İÇERİĞİNİN TAŞMASI</h1>
+	<p>eğer küçük bir kutucuk içerisinde  çok fazla metin varsa taşma meydana gelir ve metin kutunun dışına taşar bunun için overflow kullanılır</p>
+		<table>
+		<tr>
+		<td><b>özellik ve değer<b></td>
+		<td><b>açıklama<b></td>
+		</tr>
+		<tr>
+		<td>overflow:visible;</td>
+		<td>varsayılan olarak bu değer kullanılır.eğer içerik kutu içine sığmazsa taşan kısım alttan devam eder ve ziyaretçiye gösterilir.</td>
+		</tr>
+		<tr>
+		<td>overflow:hidden;</td>
+		<td>eğer içerik kuu içine sığmazsa taşan kısım alttan devam eder fakat ziyaretçiye gösterilmez</td>
+		</tr>
+		<tr>
+		<td>overflow:scroll;</td>
+		<td>eğer içerik kutu içine sığmazsa taşan kısım ziyaretçiyegösterilmezama bir kaydırma çubuğu ile taşan içeriğin görüntülenmesi sağlanır.</td>
+		</tr>
+		<tr>
+		<td>overflow:auto;</td>
+		<td>eğer taşma olursa kaydırma çubuğu gösterilir ve taşan içerik kaydırma çubuğu ile görüntülenebilir.</td>
+		</tr>
+		</table>
+	
+	
+</body>
+
+</html>

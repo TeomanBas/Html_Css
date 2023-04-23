@@ -1,0 +1,231 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<h1>VARSAYILAN YAZI TİPLERİ </h1>
+<p>kullandığımız yazı tipleri her tarayıcıda bulunmayabilir ya her tarayıcıda ortak olarak kullanılan bir yazı tipi kullanmamız lazım
+ya da alternatif yazı tipleri belilememiz gerek.bunuda şu şekilde yaparız .</p>
+
+<pre>
+h1,h2,h3,h4,h5,h6{
+font-family:arial,verdana,"times new roman","courier now";
+color:red;
+}
+</pre>
+<p>arial yazı tipi desteklenmiyorsa verdana yazı tipi etkin olacaktır. verdana yazı tipi desteklenmiyorsa times new roman kullanılır.
+birden çok kelimeden oluşan yazı tipi isimleri tırnak işareti içerisine yazılır.</p>
+
+
+<h1>METİNLERİN BİÇİMLENDİRİLMESİ</h1>
+
+<table border="1px">
+
+<tr>
+<td><b>özellik</b></td>
+<td><b>alabileceği değerler</b></td>
+<td><b>açıklama</b></td>
+
+
+<tr><td>color</td>
+<td><pre>
+renkadı,#rrggbb,
+rgb(rrr,ggg,bbb)
+
+</pre></td>
+<td>metin rengini değiştirir.metin rengini ingilizce isim girerek tgb renk kodu ve rgb renk oranları ile değiştirebiirsiniz.solda belirtilen rr,gg,bb paramtreleri 00-ff arası rrr,ggg ve bbb parametreleriise 0-255 arası değer alarak 3 ana rengin karşımından bu renk oluşmasını sağlar.</td></tr>
+
+<tr><td>font-size</td>
+<td><pre>
+smaller,small,medium,large,larger,px,em
+</pre></td>
+<td>metin boyutunu değiştirir metin boyutunu px(piksel) tiğinde değer girerek değiştirebilirsiniz.değer bu yöntem ise em değeri kullanılmaktadır.Budeğer metinleri oransal olarak boyutlandırır.metinlerin varsayılan boyutunu 1em yani 16pxdir.eğer boyutu 2cm yaparsanız 32px ,0.75cm yaparsanız 12px olur</td></tr>
+
+<tr><td>font-weight</td>
+<td><pre>
+lighter,normal,bold,bolder</pre></td>
+<td>metinlerin daha ince ,normal ya da kalın gösterir.</td></tr>
+
+<tr><td>font-style</td>
+<td><pre>normal,italic</pre></td>
+<td>meitnlerin normal ya da eğik görünmesini sağlar</td></tr>
+
+<tr><td>font-variant</td>
+<td><pre>normal,italic</pre></td>
+<td>metinlerin küçük harf boyutlarında ama büyük harf karakterleri ile görünmesini sağlar.</td></tr>
+
+<tr><td>text-transform</td>
+<td><pre>normal,smal-caps</pre></td>
+<td>metinlerin büyük harfe veya küçük harfe çevirmeye yarar.</td></tr>
+
+<tr><td>text-decoration</td>
+<td><pre>none,lowercase,uppercase,capitalize</pre></td>
+<td>metinlerin altını üstünü veya üzerini çizmek için kullanılır.</td></tr>
+
+<tr><td>letter-spacing</td>
+<td><pre>none,underline,overline,line-through</pre></td>
+<td>harfler arasındaki mesafeyi em cinsinden ayarlamanızı sağlar</td></tr>
+
+<tr><td>word-spacing</td>
+<td><pre>
+normal,em
+</pre></td>
+<td>kelimeler arasındaki mesafeyi em cinsinden ayarlamanızı sağlar.</td></tr>
+
+
+
+</table>
+
+
+<h1>PARAGRAFLARIN AYARLANMASI </h1>
+<p>
+paragrafların girintileri ,hizaları,satır araları gibi özelliklerini ayarlayabiliriz.
+</p>
+
+<table border="1px">
+
+<tr>
+<td><b>özellik</b></td>
+<td><b>alabileceği değerler</b></td>
+<td><b>açıklama</b></td>
+
+</tr>
+
+
+<tr>
+<td>text-indent</td>
+<td>em,px</td>
+<td>paragrafın ilk satıdaki girintisini ayarlar</td>
+</tr>
+<tr>
+<td>text-aling</td>
+<td>left,right,center,justify</td>
+<td>paragrafın sola,sağa,ortaya veya her iki kenara yaslnamasını sağlar</td>
+</tr>
+<tr>
+<td>line-height</td>
+<td>em, px</td>
+<td>paragraftaki satırlar arasındaki mesafeyi ayarlar.</td>
+
+</tr>
+
+</table>
+
+<h1>ARDALAN KULLANIMI</h1>
+<p>metinlere değişik renkte ve özellikte resim veya ardalan rengi  uygulanabilir.metinlerin veya paragrafların ardalan özelliklerini değiştirmek için 
+background özelliği kullanılır.</p>
+
+<pre>
+
+.p{
+background:renk_adi; 
+background:#rr,gg,bb;
+background:rgb(rrr,ggg,bbb);
+background:url(resim);
+}
+<pre>
+
+<p>arka plan resmi veya fonunun tekrar etmesi ,etmemesi ve
+ kenarlara tam oturması kaydırınca scroll ile beraber kayması gibi özelliklerde eklenenbilir </p>
+
+<table border="1px">
+
+<tr>
+<td>özellik</td>
+<td>açıklama</td>
+
+</tr>
+
+<tr>
+<td>no-repeat</td><td>resim yatay veya dikey olarak tekrar edilmez</td>
+</tr>
+<tr><td>repeat-x</td><td>sadece x yönünde tekrarlanır</td></tr>
+<tr><td>repeat-y</td><td>sadece y yönünde tektarlanır.</td></tr>
+<tr><td>fixed</td><td>resim sabit olarak yerinde durur.</td></tr>
+<tr><td>scroll</td><td>sayfa yukarı aşağı kaydırıldıkça resimde kayar</td></tr>
+</table>
+
+
+<p>birkaç farklı ardalan özeliği daha var<p>
+
+<table border="1px">
+
+<tr>
+<td>özellik</td>
+<td>alabileceği değerler</td>
+<td>açıklama</td>
+</tr>
+
+<tr>
+
+<td>background-color</td>
+<td>renk_ad,#rrggbb,rgb(rrr,ggg,bbb)</td>
+<td>ardalan rengini belirler</td>
+
+</tr>
+
+<tr>
+
+<td>background-image</td>
+<td>url(resim)</td>
+<td>ardalan resmini belirler.</td>
+
+</tr>
+
+<tr>
+
+<td>background-repeat</td>
+<td>no-repeat,repeat-x,repeat-y,repeat</td>
+<td>ardalan resminin tekrar edip etmeyeceğini belirler</td>
+
+</tr>
+
+<tr>
+
+<td>background-attachment</td>
+<td>acroll,fixed</td>
+<td>ardalan resminin sayfa ile beraber kareket edip etmeyeceğini belirler.</td>
+
+</tr>
+
+<tr>
+
+<td>backgound-position</td>
+<td>x y(resminin sayfanın soluyla ve üstüyle olan mesafe) left top,left center,left bottom,right top,
+
+right center,right bottom,center top,center center,centerbottom</td>
+<td>ardalan resminin lonumunu belirler örneğin "left top" değeri remini html elemanının sol üst bölgesine yerleştirir.</td>
+
+</tr>
+<tr>
+
+<td>backgound-size</td>
+<td>Gpx Ypx G% Y%</td>
+<td> ardalan resminin genişliği ve yüksekliği belirlenir.Örneğin 60px 40px veya 80% 80% değerleri kullanılabilir.</td>
+
+</tr>
+
+
+
+</table>
+
+<p>örnek bir kullanım :Ardalan rengi  SARI ve resim bu ardalanın ortasındadır.</p>
+
+<pre>
+
+
+
+b{
+
+background:yellow url("w3c.jpg") no-repeat center center;
+
+}
+
+
+</pre>
+
+
+</body>
+<footer></footer>
+</html>

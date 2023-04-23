@@ -1,0 +1,24 @@
+.kose{
+	border-style:solid;
+	border-top-left-radius:50px;
+	border-top-right-radius:100px;
+	border-bottom-right-radius:100px;
+	border-bottom-left-radius:50px;
+	
+	
+}
+
+.golge{
+	border-style:solid;
+	border-top-left-radius:50px;
+	border-top-right-radius:100px;
+	border-bottom-right-radius:100px;
+	border-bottom-left-radius:50px;
+	overflow:auto;
+	height:500px;
+	
+	/* inset gölgeyi nesnenin iç tarafına yapar*/
+	box-shadow:0px 10px 100px 0px red ;
+	
+}
+

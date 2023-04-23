@@ -1,0 +1,556 @@
+<html>
+<head>
+<meta charset="utf8">
+<link rel="stylesheet" type="text/css" href="../css/style2.css"/>
+</head>
+<body>
+<h1>SEÇİCİLER VE KULLANIMLARI</h1>
+<table border="1px">
+<tr>
+<td> <b>SEÇİCİ(CSS KODU)</b></td>
+<td> <b>AÇIKLAMA</b></td>
+</tr>
+<tr>
+<td><pre>
+p{
+color:red;
+}
+
+</pre></td>
+<td>p etiketlerinin tümünü kapsar</td>
+</tr>
+<tr>
+<td><pre>
+p strong{
+color:red;
+}
+</pre></td>
+<td>p taglarının içerisindeki tüm strong etiketlerini kapsar</td>
+</tr>
+<tr>
+<td><pre>
+#ilk{
+color:red;
+}
+</pre></td>
+<td>id değeri ilk olan tagı kapsar</td>
+</tr>
+<tr>
+<td><pre>
+.son{
+color:red;
+}
+</pre></td>
+<td>class adı son olan tagı kapsar</td>
+</tr>
+<tr>
+<td><pre>
+h1.egik{
+color:red;
+}
+</pre></td>
+<td>h1 taglarının içindeki adı egik olan class ı kapsar</td>
+</tr>
+<tr>
+<td><pre>
+nav#buton{
+color:red;
+}
+</pre></td>
+<td>nav taglarının içindeki buton id lerini kapsar</td>
+</tr>
+<tr>
+<td><pre>
+h1,h2,h3,h4,h5,h6{
+color:red;
+}
+</pre></td>
+<td>h1...h6 taglarını kapsar</td>
+</tr>
+<tr>
+<td><pre>
+body,strong,em{
+color:red;
+}
+</pre></td>
+<td>body , strong ve em taglarını kapsar </td>
+</tr>
+<tr>
+<td><pre>
+nav p{
+color:red;
+}
+</pre></td>
+<td>nav taglarının içindeki p taglarını kapsar</td>
+</tr>
+<tr>
+<td><pre>
+.banner{
+color:red;
+}
+</pre></td>
+<td>class ismi banner olan tagları kapsar</td>
+</tr>
+<tr>
+<td><pre>
+.banner p{
+color:red;
+}
+</pre></td>
+<td>class ismi banner olan p taglarını kapsar</td>
+</tr>
+<tr>
+<td><pre>
+.banner>.menu{
+color:red;
+}
+</pre></td>
+<td>class ismi banner olan tagların içindeki class ismi menu olan tagları kapsar. </td>
+</tr>
+<tr>
+<td><pre>
+.banner>.menu ul{
+color:red;
+}
+</pre></td>
+<td>class ismi banner olan tagların içindeki class ismi menu olan tagların içindeki ul taglarını kapsar.</td>
+</tr>
+<tr>
+<td><pre>
+.banner>.menu ul li{
+color:red;
+}
+</pre></td>
+<td>class ismi banner olan tagların içindeki class ismi menu olan tagların içindeki ul taglarının içindeki tüm li taglarını kapsar. </td>
+</tr><tr>
+<td><pre>
+nav.menu{
+color:red;
+}
+</pre></td>
+<td>nav etiketlerinin içindeki class ismi menu olan tagları kapsar.</td>
+</tr>
+<tr>
+<td><pre>
+nav.menu li{
+color:red;
+}
+</pre></td>
+<td>nav taglarının içindeki class ismi menu olan tagların içndeki li etiketlerini kapsar</td>
+</tr>
+<tr>
+<td><pre>
+body>p:first-child{
+color:red;
+}
+</pre></td>
+<td>body tagları içindeki ilk p tagını kapsar</td>
+</tr>
+<tr>
+<td><pre>
+body>.p:last-child{
+color:red;
+}
+</pre></td>
+<td>body tagları içindeki son p tagını kapsar.</td>
+</tr>
+<tr>
+<td><pre>
+.nav>.menu>.ul li:first-child{
+color:red;
+}
+</pre></td>
+<td>class ismi nav olan tagların içindeki class ismi menu olan tagların içindeki class ismi ul olan tagların içindeki ilk li tagını kapsar.</td>
+</tr>
+<tr>
+<td>
+<pre>
+body p:nth-child(n){
+color:red;
+}
+</pre>
+</td>
+<td>body tagının içindeki p taglarının içinden n'inci p tagını kapsar</td>
+</tr>
+<tr>
+<td>
+<pre>
+div + p{
+color:red;
+}
+</pre>
+</td>
+<td>div öğelerinden hemen sonra gelen p etiketini seçer</td>
+</tr>
+
+
+</table>
+
+<h1>KOMUT ADIYLA SEÇİCİ KULLANIMI </h1>
+<p> eğer bir tag içerisindeki tüm taglara bir özellik uygulanmak isteniyorsa komut adıyla seçiçi kullanımı uygulanır.</p>
+<pre> 
+p{
+color:green;
+}
+</pre>
+
+<h1>TEKİL SEÇİCİ KULLANIMI</h1>
+<p>eğer bir tag içerisindeki bir çok aynı tagdan sadece birine bir özellik uygulanmak isteniyorsa tekil seçici kullanılır.Bunun için istenen taga id değeri verilir ve o id değeri üzerinden istenen
+özellik css kodları ile uygulanır.
+</p>
+
+<pre>
+
+#id{
+color:green;
+}
+</pre>
+
+<h1>SINIF CLASS SEÇİCİLER</h1>
+<p>sınıd seçicileri istediğimiz kadar html tagına uygulayabiliriz.tekil seçiciler yerine class seçicilerin kullanılması daha uygun olabilir.
+</p>
+
+<pre>
+.arialyaz{
+font-family:arial;
+buradaki kodlar tüm arialyaz sınıflarının içerisinde ve alt taglarında geçerli olacaktır.
+}
+</pre>
+<h1>SEÇİCİLER (SELECTOR)</h1>
+<table border="1px">
+
+<tr>
+<td><b>SEÇİCİ</b></td>
+<td><b>AÇIKLAMA</b></td>
+</tr>
+<tr>
+<td>*</td>
+<td>bütün elemanları/html taglarını seçer</td>
+</tr>
+<tr>
+<td>root</td>
+<td> < html > tagını seçer</td>
+</tr>
+<tr>
+<td>empty</td>
+<td>içeriği olmayan html taglarını seçer</td>
+</tr>
+<tr>
+<td>not(seçici)</td>
+<td>belirtilen html tagına uymayanları seçer</td>
+</tr>
+<tr>
+<td>first-child</td>
+<td>eleman içindeki ilk çocuğu seçer</td>
+</tr>
+<tr>
+<td>last-child</td>
+<td>eleman içindeki son çocuğu seçer.</td>
+</tr>
+<tr>
+<td>nth-child(n)</td>
+<td>eleman içindeki n.coçuğu seçer</td>
+</tr>
+<tr>
+<td>nth-child(2n+1)</td>
+<td>tek numaralı elemanları seçer</td>
+</tr>
+<tr>
+<td>first-line</td>
+<td>ilk satırı seçer</td>
+</tr>
+<tr>
+<td>first-letter</td>
+<td>ilk karakteri seçer</td>
+</tr>
+<tr>
+<td>before</td>
+<td>seçilen elemandan önce içerik ekler ve eklenen içeriği biçimlendirir.</td>
+</tr>
+<tr>
+<td>after</td>
+<td>seçilen elemandan sonra içerik ekler ve eklenen içeriği biçimlendirir.</td>
+</tr>
+<tr>
+<td>only-child</td>
+<td>eleman içindeki çocukları seçer</td>
+</tr>
+<tr>
+<td>lang(dil)</td>
+<td>belli bir dile ait içeriği seçer</td>
+</tr>
+<tr>
+<td>enabled</td>
+<td>aktif html elemanlarını seçer</td>
+</tr>
+<tr>
+<td>diabled</td>
+<td>pasif html elemanlarını seçer</td>
+</tr>
+<tr>
+<td>checked</td>
+<td>işaretli onay ve seçenek kutularını seçer</td>
+</tr>
+<tr>
+<td>valid</td>
+<td>geçerli veri girilen elemanları seçmek için </td>
+</tr>
+<tr>
+<td>invalid</td>
+<td>geçersiz veri girilen elemanları seçmek için</td>
+</tr>
+<tr>
+<td>required</td>
+<td>gerekli olan elemanları seçmek için </td>
+</tr>
+<tr>
+<td>optional</td>
+<td>opsiyonel veri girilebilen alanları seçer</td>
+</tr><tr>
+<td>link</td>
+<td>ziyaret edilmemiş linkleri seçer</td>
+</tr>
+<tr>
+<td>visited</td>
+<td>ziyaret edilmiş linkleri seçer</td>
+</tr>
+<tr>
+<td>active</td>
+<td>tıklanan ve fare bırakılana kadar olan linkleri seçer</td>
+</tr>
+<tr>
+<td>hover</td>
+<td>üzerinde fare olan linkleri seçer</td>
+</tr>
+<tr>
+<td>focus</td>
+<td>fareyle tıklanan ve aktif olan elemanları seçer</td>
+</tr>
+</table>
+
+
+<h1>LİNK SEÇİCİLER</h1>
+
+<table>
+<tr><td><b>link seçici</b></td><td><b>açıklama</b></td></tr>
+<tr>
+<td>a:link</td>
+<td>henüz ziyaret edilmemiş linkleri seçer</td>
+</tr>
+<tr>
+<td>a:visited</td>
+<td>ziyaret edilmiş linkleri seçer</td>
+</tr>
+<tr>
+<td>a:focus</td>
+<td>klavye ile etkinleştirilmiş linkleri seçer</td>
+</tr>
+<tr>
+<td>a:hover</td>
+<td>üzerinde fare olan linkleri seçer</td>
+</tr>
+
+</table>
+
+
+<h1>ÖRNEK MENÜ</h1>
+<nav class="menu">
+<a href="index.html">ANASAYFA</a>
+<a href="ürünlerimiz.html">ÜRÜNLERİMİZ</a>
+<a href="hizmetlerimiz.html">HİZMETLERİMİZ</a>
+<a href="iletisim.html">İLETİŞİM</a>
+</nav>
+
+<h1>ÖZELLİK SEÇİCİLER</h1>
+<p>sadece belli bir özelliğe sahip html elemanlarının seçilmesini sağlar.Örneğin bir form içinde bulunan ve type özelliği text olan bütün elemanları yani metin kutularını seçebiliriz.
+
+</p>
+
+
+
+<table border="1px">
+<tr>
+<td><b>seçici</b></td>
+<td><b>özellik</b></td>
+<td><b>açıklama</b></td>
+</tr>
+
+
+
+<tr>
+<td>[özellik]</td>
+<td><pre>
+
+[text]{
+color:red;
+}
+
+</pre></td>
+<td>type özelliği olan tüm html elemanlarını seçilir.</td>
+</tr>
+
+<tr>
+<td>[özellik=değer]</td>
+<td><pre>
+
+[type=text]{
+color:red;
+}
+</pre></td>
+<td>type özelliği text olan tüm html elemanları seçilir.</td>
+</tr>
+
+<tr>
+<td>[özellik~=değer]</td>
+<td><pre>
+
+[title~="web"]{
+color:red;
+}
+</pre></td>
+<td>title özelliği içinde web kelimesi geçen elemanları seçer</td>
+</tr>
+
+<tr>
+<td>[özellik|=değer]</td>
+<td><pre>
+
+[title|="web"]{
+color:red;
+}
+</pre></td>
+<td>title özelliği web ile başlayan elemanları seçer</td>
+</tr>
+
+<tr>
+<td>[özellik^=değer]</td>
+<td><pre>
+
+a[href^="https"]{
+color:red;
+}
+</pre></td>
+<td>href özelliği https ile başlayan tüm a taglarını seçer</td>
+</tr>
+
+<tr>
+<td>[özellik$=değer]</td>
+<td><pre>
+
+a[href$=".pdf"]{
+color:red;
+}
+</pre></td>
+<td>href özelliği .pdf ile biten tüm a taglarını seçer.</td>
+</tr>
+
+<tr>
+<td>[özellik*=değer]</td>
+<td><pre>
+
+a[href=*="pdf"]{
+color:red;
+}
+</pre></td>
+<td>href özelliği içinde pdfmetni olan tüm a taglarını seçer</td>
+</tr>
+
+
+
+</table>
+
+<p>tabloda gösterilen  özellikler:</p>
+<ul>
+<li>belli bir özelliğe sahip olan </li>
+<li>özelliği belli bir değere sahip olan </li>
+<li>özelliği belli bir değerle başlayan</li>
+<li>özelliği belli bir değerle biten</li>
+<li>özelliği belli bir metin olan html komutlarnı seçilip css komutu uygulabilir.</li>
+
+</ul>
+
+<p>aşağıdaki tabloda özellik seçiciler ile ilgili örnekler ve açıklamaları bulabilirsiniz .</p>
+
+<table border="1px">
+
+<tr>
+<td><b>css seçici</b></td><td><b>açıklama</b></td>
+
+</tr>
+<tr>
+<td>
+
+<pre>
+input[type]
+</pre>
+
+</td>
+<td>< input > elemanı içinde type özelliğine sahip olanları seç</td>
+
+
+</tr>
+<tr><td>
+
+<pre>
+input[type="text"]
+</pre>
+
+</td>
+<td>< input > elemanı içinde type özelliği text olanları seç</td>
+
+</tr>
+<tr><td>
+
+<pre>
+a[taget=_blank]
+</pre>
+
+</td>
+<td>< a > tagı içinde hedefi target değeri _blank olanları seç</td>
+
+</tr>
+<tr><td>
+
+<pre>
+img[title~="kedi"]
+</pre>
+
+</td>
+<td>< img > tagındaki title özelliği içinde kedi kelimesi olanları seç</td>
+
+</tr>
+<tr><td>
+
+<pre>
+div[class*="menu"]
+</pre>
+
+</td>
+<td>class özelliği içinde menu metni olan div elemanını seç</td>
+
+</tr>
+
+
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>

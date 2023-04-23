@@ -1,0 +1,117 @@
+<!doctype html>
+
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="shortcut icon" href="../images/favicon.ico">
+<link rel="icon" type="image/png" href="../images/favicon.png">
+<link rel="icon" type="image/png" href="../images/favicon.jpg">
+<style>
+.bir{
+opacity:0.9;
+}
+.iki{opacity:0.5;
+}
+.üç{opacity:0.2;
+}
+</style>
+</head>
+<body>
+
+<h1 id="sayfabasi">TEMEL GRAFİK BİLGİSİ</h1>
+<p>web sayfalarındaki resimer adına piksel denilen kareciklerden /noktalardan oluşur.bir görüntünün kalitesi  yani çözünürlük,1 inch'teki piksel sayısı ile ölçülür.Çözünürlük DPI(DOT PER INCH ) birimi ile ifade edilir.eğer bir görüntü 300 piksel 
+çözünürlüpe sahipse o görüntüde inch başına 300 piksel düşüyor demektir.600 dpi olan bir görüntü daha kalitelidir .inch başına 600 piksel düşer </p>
+
+<p>çözünürlük: 1 inch başına düşen piksel/nokta sayısıdır.ne kadar fazla olursa okadar kaliteli görüntü elde edilir.doğal olarak ne kadar kaliteli olursa bellekte o kadar çok yer kaplar.günümüz monitörler (2018) 72 veya 96 dpi özelliklere sahiptir.bu nedenle web sayfalarındaki resimlerin 
+çözünürlüğü genelde 72 dpi yapılır ve bellekte gereksiz yere meşgul edilmemiş olur.     </p>
+
+<p>nokto:aralığı monitördeki görüntüler piksellerden noktalardan oluşur.bu noktalar arasındaki mesafe ne kadar az olursa görüntü o kadar kaliteli olur.iki nokta arası mesafe (dot pitch ) ile ifade edilir.</p>
+
+<p>renk derinliği:bir pikselin alabileceği renk sayısını ifade eder.ne kadar çok olursa o kadar iyidir ve o kadar da gerçekçi görünür.16bit/65000 farklı renk alabilir.</p>
+<p> kontrast:renkler arası keskinliği ve farklılığı belli eder</p>
+<p>tazeleme frekansı :ekrandaki görüntünün 1 saniyedeki kaç defa tazelendiğini belirtir.Ne kadar yüksek olursa  o kadar iyi.Eğer tazeleme frekansı düşük olursa görüntü titreyebilir.grafik uygulamlarında frekansı yüksek monitörler kullanılmalıdır.</p>
+
+<h1>ÜCRETSİZ LOGO & RESİM BULUNABİLECEK SİTELER</h1>
+
+	<ol>
+	<li>http://www.stockfreeimages.com/</li>
+	<li>http://www.1millionfreepictures.com/</li>
+	<li>https://www.flickr.com/</li>
+	<li>http://openphoto.net</li>
+	<li>http://www.freeimages.com</li>
+	<li>http://www.deviantart.com</li>
+	<li>http://freerangestock.com</li>
+	<li>http://www.imagebase.net</li>
+	<li>http://www.stockvault.net</li>
+	<li>http://www.wikimedia.org</li>
+	</ol>
+
+
+<h1>RESİM ÖZELLEİKLERİ</h1>
+<p>alt özelliği(alternate text):resim görüntülenmesse resmin bulunacağı konumda bir yazı görüntülenmesini sağlar.eğer alt metni resmin genişliğinden daha uzun olursa görüntülenmez.alt metni arama motorları için önemlidir ve 
+alt metninin içeriği ve anahtar kelimeleri resmi yansıtmalıdır resim ile ilgili olmalıdır. </p>
+<p>title:eğer resmin üzerine gelindiğinde açıklama görünmesinin istiyorsak title özelleiğini kullanabiliriz.title özelleği arama motorları içinde önemlidir ve title içerisine girilen metinlerin ve anahtar kelimelerin resmi yansıtması ve içerikle ilgili olması gerekmektedir.</p>
+<b>resim 1</b><br>
+<img border="1px" src="../images/ornekresim.jpeg" alt="resim formatı tarayıcınız ile uygun değil" title="ufo"/><br/>
+<b>resim 2</b><br>
+<img border="1px" src="../images/ornekresim.jpg" alt="resim formatı tarayıcınız ile uygun değil"height="300" width="434"/>
+
+
+<h1>RESİMLERE ALT YAZI EKLEME</h1>
+<p>resimlere alt yazı veya üst yazı eklemek için figure ve figcaption tagları kullanılır ve bu taglar semantik taglerdir arama motorları tarafından resimlerin indekslenmesi için dikkate alınır.</p>
+<figure>
+<img src="../images/ornekresim.jpg" height="150" width="217"/>
+<figcaption>
+şekil:1.2 ufolar geliyor
+</figcaption>
+</figure>
+
+
+<h1>FAVİCON BELİRLEME</h1>
+<p>faviconlar sayfanın head kısmına tanımlanır ve 16x16 ölçülerde olmalıdır.</p>
+<code>
+
+< link rel="shortcut icon" href="favicon.ico" > rel ile link edilen nesnenin ne olacağı belirlenir. ico standart ve 16x16 lık bir favicon olduğu için type tanımlaması gereksizdir.<br/>
+< link rel="icon" type="image/png" href="favicon.png" > yine farklı bir rel tanımlaması ile favicon link edildi. <br/>
+< link rel="icon" type="image/png" href="favicon.jpg" > 
+
+</code>
+
+
+<h1>SAYDAMLIK</h1>
+<p>css kodları ile resimlere saydamlık verebiliriz.opacity komutu ile 0 ile 1 arasında ondalık değerler vererek saydamlık derecesini ayarlayabiliriz.</p>
+
+<img class="bir" src="../images/saydamlik.jpg" width="400">
+<img class="iki" src="../images/saydamlik.jpg" width="400">
+<img class="üç" src="../images/saydamlik.jpg" width="400">
+
+<h1>ANCHOR ÇAPA KULLANIMI</h1>
+	<p>çapa kullanımı başka sayfalara,web sitelerine mp3 ,mp4 rar , pdf gibi dosyalara link verilebilir target özelliği ile _blank v _self değerleri verilerek 
+	gidilecek olan sayfanın yeni sekmedemi yoksa aynı sekme içerisinde mi açılacağı belirlenebilir.self aynı sekmede açar blank yeni bir sekmede açar.</p>
+	<a href="https://www.google.com">google</a> <br/>
+	<a href="#sayfabasi"> sayfa başı</a> <br/>
+	<a href="mailto:xyz@xyz.com">mail adresimiz</a> <br/>
+	<a href="56_w3c_semantic_web.html" target="_blank">ders 1</a> <br/>
+	<a href="57_w3c_.html" target="_self">ders 1</a> <br/>
+<h1>TABLO UYGULAMASI</h1>
+<table border="5">
+<caption>ÜLKE NÜFUSLARI</caption>
+<thead>
+<tr><th><b>ÜLKELER</b></th><th><b>NÜFUSLAR</b></th></tr>
+</thead>
+<tbody>
+<tr><td>FRANSA</td><td>10</td></tr>
+<tr><td>AMERİKA</td><td>15</td></tr>
+<tr><td>ALMANYA</td><td>20</td></tr>
+<tr><td>İTALYA</td><td>30</td></tr>
+
+</tbody>
+
+<tfoot>
+<tr><td><b>TOPLAM</b></td><td><b>0</b></td></tr>
+</tfoot>
+</table>
+
+
+</body>
+</html>

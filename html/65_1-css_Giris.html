@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head lang=tr>
+<meta charset=utf-8>
+</head>
+<body>
+<h1> CSS GİRİŞ DERS 1</h1>
+<p>css her html komutunu bir nesne ya da kutu olarak görmektedir.
+her nesnenin de değişik özellikleri ve her özelliğin de alabileceği farklı değerlerin vardır
+css komutları 3 kısımdan oluşur.
+<ul>
+<li>html komutu (selector)</li>
+<li>özellik (property)</li>
+<li>değer (value)</li>
+</ul>
+</p>
+
+<p>
+
+tipik bir css komutu aşağıdaki gibidir.
+<table border="1px">
+<tr>
+<td><b>söz dizimi</b></td>
+<td>seçici</td>
+<td>{komut1;}{komut2;}</td>
+</tr>
+<tr>
+<td><b>örnek</b></td>
+<td>p</td>
+<td>{color:red;font-size:20px;}</td>
+</tr>
+</table>
+</p>
+
+<p>p tagına css uygulamak için <br/>
+<pre>
+p{
+color:blue;
+font-size:20px;
+}
+
+</pre>
+şeklinde bir kodlama biçimi yapılmalıdır ve kod okunabilirliğide artırılmış olur.
+</p>
+
+<p> hx taglarına css uygulamak için şöyle bir kullanım yapılabilir.
+</p>
+
+<pre>
+h1,h2,h3,h4,h5,h6{
+
+font-family:arial;
+}
+</pre>
+
+<p> eğer tüm p taglarının ve resim açıklamalarının rengini değiştirmek istiyorsak aşağıdaki gibi bir kullanım yapılabilir.</p>
+<pre>
+p, figcaption{
+color:red;
+}
+</pre>
+
+<p> eğer yazmak istediğimiz css kodları bir id ile tanımlanmış bir nesneye aitse aşağıdaki # işareti ile id değeri yazılarak süslü parantezler
+içerisine css kodları yazılır.</p>
+<pre>
+#id-değeri{
+css kodları;
+}
+</pre>
+
+<p> eğer bir css komutunu bir class nesnesine uygulamak istiyorsanız class isminin başına nokta koyarak süslü parantezler içerinde css kodlarımızı yazabiliriz.</p>
+
+<pre> 
+.class-ismi{
+css komutları;
+}
+
+</pre>
+
+<p> eğer css komutlarının içerisine açıklama satırları eklemek istiyorsanız. </p>
+
+
+<h1> CSS KODLARI NEREYE YAZILIR?</h1>
+<p>CSS kodları üç farklı bölgeye yazılabilir.</p>
+<ol>
+<li>Inline : satır içi (html tagının içi)
+<pre>
+< p style="color:red;"> BU ÖRNEK BİR PARAGRAF</p>
+</pre>
+</li>
+<li>Internal:dahili sayfanın head tagının içine</li>
+<pre>
+< html >
+< head >	
+< style >
+
+p{
+color:red;
+font-size:15px;
+}
+
+< /style >
+< /head >
+
+
+< body >
+< /body >
+
+< footer >
+< /footer >
+< /html >
+
+</pre>
+<li>External:harici (proje klasörü içinde html sayfası dışında bir dosya)</li>
+<p>html dosyasının yanında style.css adında bir boş bir dosya oluşturulur ve hangi html dosyasında kullanılmak isteniyor css komutları o dosyalara link verilir
+link verme işlemi html dosyasının head etiketlerinin içerisine yapılır.
+
+<pre>
+< html >
+< head >	
+
+< link rel="stylesheet" type="text/css" href="/css-dosyaları/style.css" >
+< /head >
+
+< body >
+< /body >
+< footer >
+< /footer >
+< /html >
+</pre>
+</p>
+
+
+</ol>
+<p>css kodlarını external biçim de yazmak daha iyidir html kodlarından ayrı olması html kodlarını yazarken daha iyi odaklanmamızı ve 
+daha verimli çalışmamızı sağlar.style.css dosyasının içerisinde css kodları yazarken herhangi bir selector değişikliği yoktur.
+</p>
+
+
+<h1>HANGİ CSS KODU ÖNCELİKLİ?</h1>
+<p>öncelikli olan css kodları inline kodlardır.ikinci olarak öncelikli olan internal css kodlarıdır.üçüncü olarak öncelikli olan css kodları external css kodlarıdır.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+<footer>
+</footer>
+
+
+</html>

@@ -1,0 +1,45 @@
+.tugla1{
+	height:300px;
+	width:300px;
+	background-image:url(../images/tugla1.jpg);
+	background-repeat:fixed;
+	float:right;
+	margin:20px;
+	
+	
+}
+.tugla2{
+	
+	height:300px;
+	width:300px;
+	background-image:url(../images/tugla2.jpg);
+	background-repeat:fixed;
+	float:right;
+	margin:20px;
+	
+	
+	
+}
+.tugla3{
+	
+	height:300px;
+	width:300px;
+	background-image:url(../images/tugla3.jpg);
+	background-repeat:fixed;
+	float:right;
+	margin:20px;
+	
+}
+.tugla4{
+	
+	height:300px;
+	width:300px;
+	background-image:url(../images/tugla3.jpg);
+	background-repeat:fixed;
+	float:right;
+	margin:20px;
+	
+}
+.clear{
+	clear:both;
+}

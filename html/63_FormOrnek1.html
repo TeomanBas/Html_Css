@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+</head>
+<body>
+<form name="müsteribilgiform" action="form.php" method="POST" border="1px" >
+<table border="1px">
+<tr><td>ad:</td><td><input type="text" name="ad" size="30" maxlenght="50" placeholder="adınızı giriniz" required autofocus ></td></tr>
+<tr><td>mail adres:</td><td><input type="mail" placeholder="mail adresinizi giriniz" autocomplate></td></tr>
+<tr><td>web sitesi:</td><td><input type="url" autocomplate></td></tr>
+<tr><td><input type="submit" value="gönder"></td><td><input type="reset" value="temizle"></td></tr>
+<tr><td>saç rengi:</td><td><input type="text" autocomplate disable="disable"></td></tr>
+</table>
+<textarea name="ileti" rows="5" cols="50" maxlength="200"></textarea><br/>
+<input type="hidden" name="ip" value="burada bir ip değişkenini almış olan bir string değişkeni olabilir.!!!!">
+<label>SİTEMİZİ BEĞENDİNİZ Mİ?</label><br/>
+<label>beğendim</label><input type="checkbox" name="begeni" value="yes" checked>
+<label>orta</label><input type="checkbox" name="begeni" value="okey" >
+<label>beğenmedim</label><input type="checkbox" name="begeni" value="no" >
+<br/><br/><br/>
+<label>SİTEMİZİN HIZINI BEĞENDİNİZ Mİ?</label><br/>
+<label>çok iyi</label><input type="radio" name="hiz"  checked>
+<label>orta</label><input type="radio" name="hiz">
+<label>kötü</label><input type="radio" name="hiz">
+<br/><br/><br/>
+<select name="sehir" size="1" >
+<optgroup label="ege">
+<option>izmir</option>
+<option>aydın</option>
+<option>muğla</option>
+</optgroup>
+<optgroup label="marmara">
+<option selected>istanbul</option>
+<option>bursa</option>
+</optgroup>
+</select>
+<br/><br/>
+
+<input type="file"  name="dosya seçiniz" src="belgeler">
+
+</form>
+
+
+
+
+
+
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<p> get ve post metodları ile formdaki veriler işlenmek için bir sayfaya gönderilebilr veya mail atılabilir.get metodunda veriler adres barında gider böylece gönderilen veriler adres barında görülebilir.
+eğer metod belirtilmezse form default olarak post metodu ile çalışır.
+</p>
+<p>action özelliği ile verilerin gönderileceği sayfa belirtilir ve verile o sayfadan işlenir.</p>
+<p> required özelliği ile form elemanının doldurulması zorunlu hale gelir.</p>
+<p>type özelliği ile form elemanının tipi belirlenir</p>
+<p>size özelliği ile metin kutusunun genişliği belirlenir.</p>
+<p>maxlenght özelliği ile metin kutusunun maksimum karakter limiti belirlenmiş olur.</p>
+<p>formlar elemanları tablo içerisinde oluşturulursa daha düzenli bir görüntü sağlanabilir.</p>
+<p>mail ve url typelerinin kulanımı bazı kısayollar ve telefon tablet gibi cihazlanda kolalık sağlar</p>
+<p>textarea tagı ile kullanıcıdan mesaj iletileri alabiliriz maxlength özelliği ile girilebilecek karakter limitini ayarlayabilriz.</p>
+<p>placeholder açıklama metni için kullanılır.</p>
+<p>autofocus sayfa açıldığında otomatik olarak autofocus olarak belirtilen form elemanlarının üzerinde odaklı kalır o form elemanını aktif yapmasını sağlar.</p>
+<p>autocomplate formlara girilen verilerin daha önce girilen veriler dikkate alınarak tamamlandmasını sağlar</p>
+<p>disable belirtilen form elemanını etkisiz kılar </p>
+<p>required , autofocus ve disable özellikleri bazı tarayıcılarda required="required", autofocus="autofocus" disable="disable" olarak yazılırsa çalışır bu yüzden bizim her zaman bu şekilde yazmamızda fayda vardır.</p>
+<p>checkboc ile web sayfasında seçim kutucukları oluşturup kullanıcı ile etkileşim sağlanabilir. checked özelliği kutu otomatik seçilmiş olur ve form gönderildiğinde o seçim gönderilir.checked özelliği checked="checked" kullanılması tavsiye edilir.</p>
+<p>radio buton ile kullanıcının sadece bir tane seçim yapmasını sağlayabiliriz bunu name değeri ile gruplayarak sağlarız örneği name="hız" name="tasarım" şeklinde hız ve tasarım olarak kullanıcıdan iki farklı alan için feedback alabilriz. </p>
+<p>select tagı ile listeler oluşturulabilir .select tagının arasına yazılan option tagı ile seçenekler,optgroup ile seçenek gurupları oluşturulabilir.
+name ile select option ve opt grup taglarına isimler verilebilir label özelliği ile belirtilen liste gruplarına isimler verilebilir. selected ile varsayılan olarak seçili bir liste öğesi belirlenebilir.
+ 
+</p>
+<p>BAZEN GİZLİ FORM ELEMANLARI KOYUP BUNLARI KULLANICIYA GÖSTERMEK İSTEYEBİLİRİZ BUNLAR TARİH IP ADRESİ GİBİ VERİLER OLABİLİR BUNUN İÇİN NORMAL BİR İNPUT İÇERİSİNDE type ="hidden" özelliği gönderilebilir. </p>
+<p>KULLANICIDAN PDF TEXT WORD JPG VB DOSYALAR YÜKLEMESİNİ İSTEYEBİLİRİZ.ANCAK BUNU YAPARKEN FORM METODU POST OLMALIDIR GET METODU İLE DOSYALAR ALINAMAZ ÇÜNKÜ GET METODU ADRES BARINDA VERİ GÖNDERİR.POST METODU İLE KULLANICIYA SEÇTİRİLEN DOSYA PHP VEYA ASP SAYFASINA YÖNLENDİRİLEREK YÜKLENİR.DOSYAYI YÜKLEYEN
+HTML KODLARI DEĞİLDİR WEB PROGRAMLAMA FRAMEWORKLERİNİN FONKSİYONUDUR.BİR ANCAK HTML KODLARI KULLANICIYA DOSYA SEÇTİRİP SUBMİT İLE SEÇİLEN FORM VERİ VEYA DOSYALARINI İLGİLİ PHP VEYA ASP SAYFASINA YÖNLENDİRİRİZ</p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+
+</body>
+<footer></footer>
+</html>
