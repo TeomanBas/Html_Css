@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>< video > ve < audio > etiketleri</title>
+</head>
+    <body>
+        <h1>< video > , < audio >, < picture > ve < source > etiketi</h1>
+        <p>sayfaya video ve ses eklemek eklemek amaçlı kullanılır.desteklenene formatlar tarayıcılara göre değişmektedir.
+            Genel olarak mp4 mp3 vb genel geçer formatlar her tarayıcı için desteklenir.spesifik formatların desteklenip desteklenmedikleri 
+            web sitelerinden bakılarak öğrenilebilir. < source > etiketi birden fazla dosya kaynağı belirlemek için kullanılır ve video picture audio etiketlerinin 
+            arasında kullanılır.
+        </p>
+        <h3>video ve audio etiketinin özellikleri</h3>
+        <ol>
+            <li><b>Autoplay : </b>videonun hazır olduğu anda oynatılmayabaşlayacanı belirtir.</li>
+            <li><b>controls : </b>video kontrol düğmelerinin görünüp görünmeyeceğini belirler</li>
+            <li><b>height/width : </b>video görüntüleme alanının sırasıyla tüksekliği ve genişliğini belirler</li>
+            <li><b>loop : </b>videonun bittikten sonra tekrar başlayacağını gösterir</li>
+            <li><b>muted : </b>ses çıkışının kapatılmasını sağlar</li>
+            <li><b>poster : </b>video indirilirken veya kullancı oynat düpmesine basana kadar gösterilecek bir resmi belirtir.</li>
+            <li><b>Preload : </b>sayfa yüklendiğinde video nun yüklenip yüklenmeyeceğini veya nasıl yükleneceğini belirler </li>
+            <ol>
+            <li><b>auto : </b>sayfa yüklendiğinde tarayıcının tüm videoyu yüklemesini sağlar</li>
+            <li><b>Metadata : </b>sayfa yüklendiğinde tarayıcının yalnızca meta verileri yüklemesini sağlar</li>
+            <li><b>none : </b>sayfa yüklendiğinde videonun yüklenmemesi gerektiğini belirtir.</li>
+        </ol>
+        <p><b>not:</b>Audio ve etiketinde poster preload height/width gibi özellikler yoktur sadece ses dosyası olduğu için</p>
+        <audio src="../sounds/GameOfTrones.mp3" controls> ses kaydı</audio>
+        <video src="../videos/KuzeyIsiklari.mp4" controls height="500" width="500">video dosyası</video>
+        <br><br><br>
+        <h3>picture etiketinin özellikleri</h3>
+        <p>sayfa resim eklemek için kullanılır.picture etiketi alt etiket olarak 2 tane etiket içerir.bunlar source ve img etiketidir
+            source etiket birden fazla olabilir ancak img etiketi sadece bir tane olmalıdır.Tarayıcı en uygun resmi yüklemek için özellik değerlerini kullanılır
+            Tarayıcı eşleşen ilk source etiketini kullanacak ve aşağıdaki source etiketlerini yok sayacaktır.Img etiketi picture etiketini desteklemeyen tarayıcılar için geriye dönük uyumluluk sağlamak için veya source etiketlerinin hiçbiri eşleşmediğinde kullanılır.
+        </p>
+        <picture >
+            <source sizes="500px"  srcset="../images/menures.jpg">
+            <source media="(min-width:300px)" srcset="../images/menures.jpg">
+            <img src="../images/menures.jpg" style="width:350px; height:500px;">
+        </picture>
+        <h3>source etiketi</h3>
+        <p>video audio ve picture etiketleri için birden fazla ortam kaynağı belirlemek için kullanılır.Yani birden fazla dosya çalınması yada gösterilmesi istendiğinde video audio ve picture etiketlerinin arasında kullanılır.</p>
+        <ol>
+            <li><b>Media : </b>css kodu ile tanımlanmış medyaya ait bir özelliği ifade eder</li>
+            <li><b>sizes : </b>farklı sayfa düzenleri için resim boyutlarını belirler</li>
+            <li><b>src : </b>audio ve video etiketlerinde kaynağın yolunu belirtmek için kullanılır.</li>
+            <li><b>srcset : </b>pictures etiketinde kullanılır. gösterilecek resmin utl sini belirler.</li>
+            <li><b>gösterilecek dosyanın tipini belirler </b></li>
+        </ol>
+    </body>
+</html>

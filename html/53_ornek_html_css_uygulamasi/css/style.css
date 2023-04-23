@@ -1,0 +1,39 @@
+.ust{
+    height: 150px;
+    text-align: center;
+    font-weight: 1000;
+    font-family:  'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    padding: 25px;
+    overflow:hidden;
+    background-color: black;
+    border-radius: 30px; 
+}
+.ust .ana_baslik{
+    margin-top: 25px;
+    letter-spacing: 5px;
+    font-size: 50px;
+    color: white;
+}
+.menu{
+    margin-bottom: 10px;
+    
+    list-style-type: none;
+    font-size: 20px;
+}
+.menu nav{
+    margin-left: 33%;
+    margin-top: 35px;
+}
+.menu nav li{
+    float:left;
+    margin-left: 30px;
+}
+.menu a{
+    text-decoration:none;
+    color:white ;
+    transition: 4s;
+}
+.menu a:hover{
+    color: blue;
+}

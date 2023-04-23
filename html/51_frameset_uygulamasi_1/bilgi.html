@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FRAMES ÇERÇEVELER ve FRAME ETİKETİ</title>
+</head>
+    <body>
+        <h1>< FRAMESET >ETİKETİ</h1>
+        <p>aynı çerçeve içerisinde birden fazla sayfa gösterilmesine olanak sağlar
+            <b>cols</b> ve <b>rows</b> değerleri alabilir.
+        </p>
+        <b>COLS : </b> 
+        <p>sütünları belirler sütun sayısınca sayısal değer alır.
+            Bu değerlerin aralarına virgül konulur.Bu değer sütunun genişliğini belirler
+            değer sabit ,yüzde(%) ve * olarak ifade edilebilir. <b>"*"</b> anlamı geri kalannı diğer sütuna dahil etmek anlamına gelir.
+            < frameset cols="100", 30%, * > cols parametresinin karşısında 3 değer olduğu için 3 sütun tanımlanmış demektir.
+        </p>
+        <b>ROWS : </b> 
+        <p>sayfayı satırlara bölmek için kullanılır.KUllanımı ve aldığı değerlerin anmaı cols parametresi gibidir.
+            < frameset rows="64",* > yukarıdaki tanımlamada rows parametresinin karşısında 2 değer olduğu için iki satır tanımlanmıştır.
+            Üsttekinin yükseliği 64 piksel ve gerikalan kısımlar alttaki çerçeve ayrılmıştır.
+        </p>
+        <h1>< FRAME ></h1>
+        <p>Frameset etiketi ile tanımlanan çerçeveleri isimlendirmek bağlanacak sayfaları atamak   ve çerçevelerin özellerini belirlemek için kullanılır
+            çerçeve adedince frame etiketi kullanılır.Frameset etiketi içerisinde uzunlukları yazılan çerçevelerle aynı sırada ifade edilir.Html5 te kullanımdan kaldırılmıştır.
+        </p>
+        <b>ÖZELLİKLERİ</b><br>
+        <b>FrameBorder : </b> Çerçeveler arasındaki çubuğun(sınırın) kalınlığını belirler.0 değeri sınırı görünmez yapar.<br>
+        <b>Name : </b> çerçevenin adını belirler<br>
+        <b>Noresize : </b> değer almadan olduğu gibi kullanılır.<br>
+        <b>scrolling : </b>kaydırma çubukları ile ilgili ayarlamaları yapmak için kullanılır.<B>yes,no auto</B> olarak üç özellik alır.<br>
+        <b><i>Yes : </i></b>kaydırma çubukları içerikten bağımsız daima görüntüleme<br>
+        <b><i>no : </i></b>kaydırma çubukları görüntülenmez<br>
+        <b><i>Auto : </i></b> kaydırma çubukları duruma göre gerektiğinde kaydırma çubukları oluşur<br><br>
+        <b>Src : </b> Çevçevede gösterimi yapılacak sayfanın yolunu belirler.<br>
+    </body>
+</html>

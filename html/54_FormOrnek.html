@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FORMLAR</title>
+</head>
+<body>
+    <h2>FORMLAR</h2>
+    <p><b>autocomplate : </b> BİR İNPUT ÖĞESİNİN OTOMATİK TAMAMLAMA ÖZELLİĞİ AKTİF YADA PASİF YAPAR ON VEYA OFF DEĞERLERİNİ ALIR.OTOMATİK TAMAMLAMA ÖNCEDEN O ALANA GİRİLEN VERİLERİN SONRADAN VERİ GİRİLİRKEN LİSTE HALİNE GELMESİ OLAYIDIR.<br>
+        Otomatik tamamlama, tarayıcının değeri tahmin etmesini sağlar. Bir kullanıcı bir alana yazmaya başladığında, tarayıcı, daha önce yazılan değerlere göre alanı doldurmak için seçenekler görüntülemelidir.</p>
+    <p><b>autofacus : </b> SAYFA YÜKLENDİĞİNDE BİR İNPUT NESNESİNİN OTOMATİK OLARAK AKTİF OLUP OLMAYACAĞINI BELİRLER 
+    ÖRNEĞİN SAYFA YÜKLENDİĞİNDE İMLEŞ İSİM YAZILACAK METİN KITISINDA OLMASI İSTENDİĞİNDE  BU METİN KUTUSUNUN AUTOFOCUS ÖZELLİĞİNİN AYARLANMASI GEREKMEKTEDİR.</p>
+    <p><b>dirname : </b>GÖNDERİLECEK VERİNİN YÖNÜNÜ BELİRLER kullanıcı soldan sağa doğru bir yazma yönü kullanırsa <b>ltr</b> sağdan sola bir yazma yönü kullanırsa <b>rtl</b></p>
+    <p><b>disable </b>öğesi input öğesinin pasif yada aktif olacağını belirler</p>
+    <p><b>formectype</b> formun sunucuya gönderilirken nasıl kodlanacağını belirler</p>
+    <p><b>novalidate : </b> form öğelerinin gönderildiğinde onaylanmaması gerektiğini belirtir.</p>
+    <span>------------------------------------------------------------------------------------------------------------</span>
+    
+    <h4>Basit Form Örneği</h4>
+    <form  method="POST" action="mailto:asdf@kjk.com?subject=ogrenci">
+        <input type="text" name="isim" maxlength="40" size="10" minlength="20" autofocus>
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="submit" value="gönder">
+        <input type="reset" value="sil" ><br>
+    </form>
+    <br>
+    <span>------------------------------------------------------------------------------------------------------------</span>
+
+    <h4>target özelliği</h4>
+    <form action="" method="POST" target="_blank">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+      <p><b>target</b> form gönderildikten sonra hangi ekranda gösterileceğeini belirler</p>
+      <b>_blank : </b>boş yeni bir sayfa <br>
+      <b>_self : </b>aynı çerçevede<br>
+      <b>_parent : </b>ana çerçevede<br>
+      <b>_top : </b>pencere gövdesinde<br>
+      <b>framename : </b> belirtilen çerçevede<br>
+
+    <span>------------------------------------------------------------------------------------------------------------</span>
+
+    <p>datalist etiketi ile bir seçim için değer belirlenebilir</p>
+    <form action="" method="POST">
+        <input list="Plakalar" name="il">
+        <datalist id="Plakalar">
+        <option value="06"label="ANKARA"></option>
+        <option value="16" label="BURSA"></option>
+        <option value="58" label="SİVAS"></option>
+        <option value="60" label="TOKAT"></option>
+    </datalist>
+    <input type="submit">
+    </form>
+    <span>------------------------------------------------------------------------------------------------------------</span>
+    
+    <form method="POST" action="#">
+        <P>maxlength/minlength input öğesinin maks ve min karakter öğesini belirler </P>
+        <input type="text" maxlength="10" minlength="5">
+        <p>multiple bir kullanıcının bir input öğesine birden çok değer girebileceğini belirler</p>
+        <input type="date">
+    
+        <br><br><br>
+        pattern bir input öğesinin değerini belirlenene formatta kullanıcıdan almak için kullanılır.
+        [0-9] sıfırdan dokuza kadar olan rakamlar demektir <br>
+        [A-Za-z0-9_]{1,15} A dan Z ye, a dan z ye ve 0 dan 9 a kadar olan tün karakterlerden en az bir en fazla 
+        15 karakter girilebilir anlamındadır.<br>
+        [0-9]{13,16} rakamlardan en az 13 en fazla 16 anlamına gelir.<br>
+        .{8,} 8 ve daha fazla karakter şifre karakterleri için<br>
+        <br>
+        <label for="">tel</label>
+        <input type="text"  maxlength="10" value="tel?" pattern="[0-9]{4}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="tel">
+        <label for="">pass</label>
+        <input type="password" pattern=".{8,16}"><br><br>
+        required belirlenen inputun boş bırakılamamasını sağlar yani o alan doldurulmadan form gönderilmez. <br>
+        <input type="text" value="yaş?" required>
+        <input type="submit" value="gönder" >
+        
+    </form>
+    <span>------------------------------------------------------------------------------------------------------------</span>
+    
+    <form action="#" method="POST">
+        checkbox işaretlenebilir kutucuk  anlamına gelir birden fazla kutucuk aynı anda işaretlenebilir.
+        checked:kutunun seçili olup olmayacağını belirler<br>
+        name:isim vermek amacıyla kullanılır.<br>
+        value: kutunun sahip olduğu değeri belirler. <br>
+        isim vermek için label kullanılabilir yoksa düz kutu çıkıyor.<br>
+        <input type="checkbox" name="üst" checked>
+        <input type="checkbox" name="orta" value="orta">
+        <input type="checkbox" name="alt">
+        <br><br>
+        radio button checbox ile aynı özelliklere sahiptir.ancak bir form içerisindeki aynı name e sahip olan radio butonların sadece birisi seçili olabilir.
+        farklı namelere sahip olursa butonlar birbirinden bağımsızdır hepsi seçilebilir.<br>
+        1.sınıf<input type="radio" name="sinif">
+        2.sınıf<input type="radio" name="sinif">
+        3.sınıf<input type="radio" name="sinif">
+    </form>
+    <span>------------------------------------------------------------------------------------------------------------</span>
+    
+    <form action="#" method="" name="orn">
+        number sadece sayı girişi için kullanılır.içerisine sadece rakamlar girilebilir.<br>
+        email email adresi girişi için kulllanılır.<br>
+        file dosya girişi oluşturmak için kullanılır.<br>
+        button herhangi işlevi olmayan bir button oluşturur.içerisine resimler ve listeler yerleştirilebilir<br>
+        <b>label etiketi </b> dışarıdan herhangi bir giriş yapılmayan başlık amaçlı kullanılan bir form bileşenidir.
+        <b>for ve form özellikleri vardır. </b> for etiketin hangi form etiketine bağlandığını gösteririr.
+        form etiketin hangi forma ait olduğunu gösterir.<br>
+        <label > yaş</label><input type="number"><br>
+        <label> mail adresi</label><input type="email"><br>
+        <label > cv </label><input type="file" name="cv" ><br>
+        <label for="etk
+        " > göz rengi</label><input type="color" name="etk"><br>
+        <label>doğum tarihi</label><input type="date"><br>
+        <label > range kesin değeri belli olmayan sayısal değerleri girmek için kurllanılır </label><input type="range">
+        <label form="orn" ></label>
+        <input type="submit" value="gönder">
+    </form>
+    <span>------------------------------------------------------------------------------------------------------------</span>
+
+    <span>------------------------------------------------------------------------------------------------------------</span>
+    <h4>kullanicidan dosyalari almak</h4>
+    <img src="../images/enctype.jpg" alt="">
+    <form  enctype="multipart/form-data" method="get" action="aktarilanform.html" dir="auto" novalidate >
+        <label>GÖRÜNTÜ DOSYASI</label><input name="file" type="file" accept="image/*" aling="center" ><br>
+        <label>VİDEO DOSYASI</label><input type="file" accept="video/*" aling="center"><br>
+        <label>SES DOSYASI</label><input type="file" accept="audio/*" aling="center"><br>
+        <label>PDF DOSYASI</label><input type="file" accept=".pdf" aling="center" ><br>
+        <label>JPG VE PNG .. DOSYASI</label><input type="file" accept=".jpg,.png" aling="center" alt="alt etiketi varsayılan dosya ismi belirlenebilir."><br>
+        <label>HERHANGİ UZANTIDA BİR DOSYA</label><input type="file" accept=".herhangibiruzantı" aling="center" alt="HERHANGİ BİR UZANTI BELİRLENEBİLİR"><br>
+        <input type="text" dirname="form.dir" dir="form.dir/" ><br>
+        <input type="submit" value="Dosyaları Gönder" id="">
+    </form>
+    <span>------------------------------------------------------------------------------------------------------------</span>
+    <h1>FIELDSET ve LEGEND etiketi</h1>
+    <p><b>"disable"</b> etiket içerisindeki tüm nesneleri pasif(kullanılamaz) yapar</p>
+    <p><b>"legend"</b> fieldset etiketi ile belirlenen grup nesnesine başlık ekelemek için kullanılır.</p>
+    <p><b>"textarea"</b> çok satırdan oluşan metin kutusudur. cols rows name özellikleri vardır.</p>
+    <p><b>"select"</b> etiketi açılır liste kutuları oluşturur.Dışarıdan veri girişi yapılmaz.Alt etiketi olarak option etiketi kullanılır ve 
+    liste içerikleri option etiketi içerisine tanımlanır. <b>size</b> listenin kaç madde göstereceğini belirler. <b>multiple</b> birden fazla maddenin üst üste seçilmesini sağlar crtl tuşuna basarak birden fazla madde seçilebilir.
+<b>name </b> listeye isim vermek için kullanılabilir. </p>
+    <p><b>"option"</b> etiketi listeye seçenek elemek için kullanılır.</p>
+    <form action="#">
+        <fieldset style="max-width: 10px;">
+            <legend >KİŞİSEL BİLGİLER</legend>
+                isim <input type="text"><br>
+                yaş <input type="text"><br>
+                <textarea rows="4" name="gorus" cols="20">
+                    Hizmetinizden memnun kalmadım
+
+                </textarea>
+
+                <select name="secenekli" size="3" multiple > 
+                    <optgroup label="büyükşehir">
+                        <option >ankara</option>
+                        <option>istanbul</option>
+                        <option>izmir</option>
+                        <option> bursa</option>
+
+                    </optgroup>
+                    <optgroup label="gereksizler">
+                        <option> uşak</option>
+                        <option>konya</option>
+                    </optgroup>
+                </select>
+        </fieldset>
+    </form>
+
+</body>
+</html>

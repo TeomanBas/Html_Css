@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBJECT , PARAM ETİKETLERİ</title>
+</head>
+<body>
+    <h1>< object > etiketi</h1>
+    <p>İnternet tarayıcıları tarafından desteklenmeyen özellikle java appletleri,Activex pdf ve flash gbi nesneleri sayfaya yerleştirmek için kullanılır.
+        <br> eklentilere  parametre geçirmek için param etiketi kullanılır.özellikleri aşağıdadır.
+        <ol>
+            <li><b>DATA:</b>Nesnenin kullanılacağı kaynağın url sini belirtir.</li>
+            <li><b>FORM:</b>nesnenin ait olduğu bir veya daha fazla formu belirtir.</li>
+            <li><b>HEİGT/WİDTH:</b>nesnenin sırayla yüksekliğini ve genişliğini belirler</li>
+            <li><b>NAME:</b>nesne için isim belirler</li>
+            <li><b>TYPE:</b>data özelliğinde belirtilen veri ortam türünü belirtir.</li>
+            <li><b>USEMAP:</b>nesne ile kullanılacak bir istemci taraflı görüntü yerleşiminin adını belirtir.</li>
+        </ol>
+    </p>
+
+    <object data="../docs/python.pdf" type="aplication/pdf" height="500" width="250">
+        
+        <a href="../docs/python.pdf" > DOSYA EKİ</a>
+    </object>
+    <br>
+    <h1>< param > etiketi</h1>
+    <p>< object > etiketiyle sayfaya eklenmiş nesnelerin özelliklerini belirlemek için kullanılır.sonlandırmalı değildir.object etiketlerinin içerisinde kullanılır.
+        <br> özellikleri aşağıdadır.
+        <ol>
+            
+            <li><b>NAME:</b>Parametrenin adını belirler</li>
+            <li><b>TYPE:</b>Medya tipini belirler</li>
+            <li><b>value:</b>parametrenin alacağı değeri belirler.</li>
+            <li><b>valuetype:</b>parametrenin alacağı değerin tipini belirler.</li>
+        </ol>
+    </p>
+    <object type="audio/mp3" data="../sounds/GameOfTrones.mp3" width="200" height="20">
+    <param name="src" value="test.wav">
+    <param name="autoplay" value="true">
+    <param name="autostart" value="1">
+    <a href="../sounds/GameOfTrones.mp3">test sesi</a>
+
+    </object>
+
+
+    
+</body>
+</html>

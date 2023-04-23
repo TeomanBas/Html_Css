@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>embed etiketi</title>
+
+    </head>
+    <body>
+        <h4>EMBED Etiketi</h4>
+        <p> < embed > eklentisi sayfaya ses ve video ları eklemek için kullanılır. height, width, src, type gibi özellikleri vardır.</p>
+        <p> < embed src="ses.m4a" > Şeklinde kullanılır.</p>
+        <p>< audio controls autoplay muted loop>< /audio > den sonra < source src="ses.m4a" type="audio/m4a" >  Şeklinde de kullanılır</p>
+        hatta audio etiketinin kullanımı  embed etine göre daha iyidir döngü sessiz başla gibi özellikler verebiliriz</p>
+        
+        <audio  controls autoplay muted loop>
+            <source src="../sounds/GameOfTrones.mp3" type="audio/mpeg"> 
+        </audio>
+            
+            <!--   <video controls autoplay muted loop height="500" width="500" >
+                <source src="../videos/KuzeyIsiklari.mp4" type="video/mp4" > </video>-->
+        
+        <video controls autoplay muted loop width="300" ><br>
+            <source src="../videos/KuzeyIsiklari.mp4" type="video/mp4" > 
+        </video><br>
+            
+        <p>şeklinde video oynatabiliriz. </p>
+
+        
+        <embed src="https://www.youtube.com/embed/Hz2F_S3Tl0Y" height="315" width="560"><br>
+        embed kod <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Hz2F_S3Tl0Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br>
+        iframe
+        embed yada iframe yapısı başka sitelerdeki videoları kendi sitemiz içerisine dahil edebiliriz.
+
+    </body>
+</html>

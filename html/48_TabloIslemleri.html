@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tablo işlemleri</title>
+</head>
+<body>
+    <table border="5" align="center" cellspacing="5" cellpadding="5" width="50%" style="height: 50%;" background="blue" bordercolor="red">
+        <thead bgcolor="gray">
+            <tr>
+                <td colspan="2" align="center">DÜNYA TABLOSU</td>
+            </tr>
+        </thead>
+        <tbody>
+        <tr bgcolor="black" style="color: white;">
+            <th>dünya</th>
+            <th>canlılar</th>
+        </tr>
+        <tr align="center" bgcolor="cyan" valing="center" >
+            <td align="center">su</td>
+            <td>balık</td>
+        </tr>
+        <tr>
+            <td>hava</td>
+            <td>kuş</td>
+        </tr>
+        <tr>
+            <td>kara</td>
+            <td>maymun</td>
+        </tr>
+    </tbody>
+    <tfoot align="right" >
+        <tr>
+            <td colspan="2">toplan sonuç : 4</td>
+        </tr>
+    </tfoot>
+    </table>
+    
+    <p><b>table etiketi</b><br>
+    border : kenerlık<br>
+    aling : hizalama (center,right,left)<br>
+    cellspacing : hücrelerin arasındaki boşluk<br>
+    cellpadding : hücrelerin iç boşlukları <br>
+    </p>
+    <p><b>tr etiketi(table row) satır etiketi</b><br>
+        aling : hizalama (center,right,left,justify-iki yana yaslı)<br>
+        Valing : hücre içindeki metnin düşeydeki  yerleşimini ayarlar(top-üsttü,middle-ortada ,bottom-altta)
+    </p>
+    <p><b>td etiketi(table definition)</b>
+        aling : yukarıda belirtilen tüm aling etiketleri geçerlidir.<br>
+        colspan/rowspan : kolon  ve satır birleştirmek için kullanılır.
+        width/height : sütunun genişlik ve yüksekliğini ayarlamak için kullanılır.yüzde piksel cinsinden değer alabilir.
+        Valing : düşeydeki konumu ayarlar.Ortalı üstte ve altta olablir.yukarıdaki verilen parametreleri alabilir.
+    </p>
+    <p><b>th etiketi (table header)</b><br>
+    tablolarda başlık satırı olarak kullanılır.yazı tipi varsayılan olarak bold dur. tr etiketinin tüm özelliklerine sahiptir.
+    </p>
+    <p><b>thead , tfoot ,tbody </b>  
+    thead : tablo başlığına ait içeriği 
+    tbody : tablo gövdesine ait içeriği
+    tfoot : tablo sonu içeriği gruplamak için kullanılır. 
+    </p>
+</body>
+</html>

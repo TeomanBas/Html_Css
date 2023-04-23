@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>map ve area Etiketi</title>
+</head>
+ <h1> MAP ETİKETİ VE AREA ATİKETİ ETİKETİ VE ÖZELLİKLERİ</h1>
+ <p> map etiketi resim üzerindeki belirli bölgelere bağlantı eklemek için kullanılır. map etiketinin bir özelliği olan name etiketi 
+     area etiketleri ile ayarlanan etiketlerin hangi img etiketi içerisinde kullanılacağını belirtmek için harita ismi anlamına gelir.
+ </p>
+ <p> area etiketi resim üzerindeki belirli bölgeleri belirlemek için kullanılır. area etiketi map etiketinin özelleklerini belirleyerek mapın kullanıldığı 
+     resim üzerinde foksiyon gösterir.<b>Area etiketinin alt özellikleri</b> shape:belirlenen alanın şeklini ayarlar ve polygon,circle,rect gibi özellikleri alır
+     polygon :dikdörtgen ve yuvarlak ışında çok köşeli kapalı bir alanı tanımlar,kordinatlar x ve y şeklinde birden fazla kapalı şekli belirtecek şekilde verilir.<br>
+     circle : yuvarlak bir alanı belirler.Parametreleri sırayla merkezin x y kordinatları ve yarıçapıdır.<br>
+     rect:dikdörtgen bir alanı belirler parmetreleri sırasıyla sol üst x y ve sağ alt x y dir 
+ </p>
+ <map name="MENU">
+    <area href="../images/images.jfif" shape="rect" coords="234,99,1078,255">
+ </map>
+ <img src="../images/menures.jpg" border="5" alt="RESİM MENÜSÜ" usemap="#MENU">
+</body>
+</html>
