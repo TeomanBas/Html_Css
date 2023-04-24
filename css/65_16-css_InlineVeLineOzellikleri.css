@@ -1,0 +1,21 @@
+.bir, .iki, .uc{
+    display: inline-block; /* none değer alır ise class nesnelerini yok sayacak ve tarayıcıda görüntülenmeyecektir.
+    inline-block olur ise blok olan elementleri yanyana görüntüleyebiliyoruz ancak yükseklik vb ayarlamaları yapamıyoruz.
+    bu özellik genellikle farklı cihazlarda görüntülenecek olan sayfalar için kullanılıyormuş  */
+
+}
+
+.bir{
+    background-color: red;
+    width:350 px;
+    height:250 px;
+    font: large;
+}
+.iki{
+    
+    background-color: orange;
+    margin-top: 55px;
+}
+.uc{
+    background-color: royalblue;
+}

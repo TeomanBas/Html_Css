@@ -1,0 +1,155 @@
+ul, li{
+    padding: 0; /* Lİ ETİKETLERİNİN İÇERİSİNDEKİ İÇ BOŞLUKLARI KALDIRDIK*/
+
+}
+li{
+    list-style-type: none; /* listelerni başındaki madde işaretlerini kaldırdık*/
+}
+a{
+    text-decoration: none;  /* listelerdeki yazıların fontlarını standart yaptık*/
+}
+body{
+    font-family:Arial;
+    font-size: 14px;
+}
+header .logo{
+    margin: 0px auto;/* dış boşluğu sıfırladık ve auto diyerek ortaladık*/
+    width: 300px;
+    height: 100px;
+    padding: 10px;
+}
+.clear{
+    clear: both;
+}
+header nav ul{
+    margin:0px auto;
+    width: 400px;
+    /* piksel değeri vermezsek ortalayamıyoruz.*/
+    
+}
+header nav ul li{
+    float: left;
+    padding: 15px;
+    
+
+}
+.wrapper{
+    background-color:  black;
+}
+
+header nav ul li a{
+    color: white;
+    font-weight: 600;
+    transition: 1s ;
+    
+}
+header nav ul li a:hover{
+    margin: 0% auto;
+    color: cyan;
+    
+}
+.container{
+    max-width:1000px;
+    
+    margin: 0px auto;
+    overflow: hidden;
+
+}
+.slider{ 
+    height:100px;
+    width: 100%;
+    background:url("../images/933401.png") no-repeat center 100%;
+    position: relative;
+
+}
+.slider p.big_text, .slider p.small_text{
+    position: absolute;
+    left: 15%;  
+    color:white;
+    width:100%;
+    text-shadow: 1px 1px 1px rgb(241, 184, 184);
+    
+
+}
+.slider p.big_text{
+    font-size:46px;
+    font-weight: 600;
+    top:5%;
+    
+}
+.slider p.small_text{
+    left:90%;
+    top:99px;
+    font-size: 20px;
+
+}
+.content h1.title{
+    border-color: black;
+    background-color: black;
+    padding:10px;
+    font-size:32px;
+    color:white;
+    text-align: center;
+    
+}
+
+.container .kutu{
+    float: left;
+    text-align: center;
+    padding: 1px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin:20px ;
+    
+}   
+.imgsize{
+    width: 100px;
+    height: 150px;
+
+}
+.kutu .baslik{
+    font-size: 10px;
+    font-style: bold;
+}
+.kutu .fiyat{
+    font-size: 10px;
+
+        font-style: bold;
+    color: red;
+}
+footer{
+    background-color: gray;
+    height: 25px;
+
+    bottom:50%;
+    font-size: 15px;
+    color:hotpink;
+    padding: 10px;
+    text-align: center;
+    font-weight: 600;
+    transition: 2s;
+    top:50%;
+
+}
+footer:hover{
+    color: cyan;
+}
+@media screen and (max-width: 1000px){
+    .slider p.big_text{
+        font-size: 20px;
+        }
+    .slider p.small_text{
+        font-size: 10px;
+    }
+    .container .kutu{
+        float: left;
+        text-align: center;
+        padding: 1px;
+        box-sizing: border-box;
+        border: 1px solid black;
+        border-radius: 3px;
+        margin:20px ;
+        width: 20%;
+}
+}

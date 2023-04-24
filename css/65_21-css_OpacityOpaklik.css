@@ -1,0 +1,18 @@
+.opak{
+    height: 500px;
+    width: 500px;
+    background-color:darkred ;
+    opacity: 0.3;
+    filter:'alpha(opacity=0.5)';/* int explorer 8 ve öncesi tarayıcılarda görüntülenebilmesi için 
+    "filter" ile bu uyumluluk ayarlaması yapılamalıdır*/
+}
+
+.img{
+    height: 100px;
+    width: 100px;
+}
+
+.img:hover{
+    opacity: 0.5;
+
+}

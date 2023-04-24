@@ -1,0 +1,68 @@
+/* seçiciler */
+/* esvrensel seçiciler html dosyasındaki tüm html etiketleri için geçerlidir.
+
+*{
+    color:red;
+
+}
+*/
+/* bir etiket içersindeki bulunan başka etiketin class olarak tanımlanmış ise tüm div etiketlerine dokunmadan 
+sadece o etiket için bir biçimlendirme yapbiriz.*/
+a.div_ici1{
+    color: blue;
+}
+/* eğer sadece class ismi ile tanımlama yapılırsa tüm classlarda biçimlendirmeler aktif olmuş olur.*/
+.paragrafbicim{
+    text-align: center;
+    color: gray;
+}
+/* p etiketlerinin altında bulunan b etiketlerine biçim tanımlamak istiyorsak mesela div.p.b{} gibi bir biçimleme yapılabilir.
+*/
+b.altetiket{
+
+    color: lemonchiffon;
+}
+
+/* id seçiciler ise #id_ismi şeklinde tanımlanarak direkt olarak id lerin biçimlendirilmesini sağlarlar.
+*/
+#id_ismi{
+
+    text-align: center;
+    font-size: 50px;
+    color: limegreen;
+
+}
+/* sözde sınıf seçiciler*/
+a:link{
+    font-size: small;
+
+}
+a:hover{
+    font-size: medium;
+}
+
+a:visited{
+
+    font-size: large;
+}
+/* bitişik seçiciler* x nesnesinden hemen sonra gelen p etiketi için kullnacak özellikler tanımlanabilir.*/
+div + ul{
+
+    color: rgb(187, 36, 187);
+}
+/* cocuk seçiciler class ı liste olan nesneden hemen sonra maddeleri seçebilir. x > y şeklinde tanımlanır.*/
+ol > li{
+    color: royalblue;
+}
+
+/* x nesnesinden sonra  gelen tüm y elementlerini seçmek istersek ~ yaklaşık işareti kullanılır.*/
+ol ~ pre{
+    color: tomato;
+}
+
+/* birden fazla alana aynı özellikleri atamak için a, b { özellikler } şeklinde tanımlama yapılabilir. verilen özellikler 
+a ve b için geçerli olacaktır.*/
+s1:active, s2:visited{
+    font-size: large;
+    color: red;
+    }

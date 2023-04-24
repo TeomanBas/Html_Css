@@ -1,0 +1,29 @@
+.test1{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    
+}
+.test1:hover{
+    cursor: progress;
+    
+}
+
+.test2{
+
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+
+}
+
+.test2:hover{
+    cursor: wait;
+}
+.yardim:hover{
+    cursor: help;
+}
+
+.uye{
+    cursor: url(../images/cursor.png), url(../images/cursor.cur) , default;
+}

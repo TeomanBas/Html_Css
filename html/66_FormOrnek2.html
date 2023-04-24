@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+<table border="1px">
+<caption>İLETİŞİM FORMU</caption>
+<form>
+<form name="iletisim" action="#" method="GET">
+<tr><td>ADI SOYADI:</td><td><input type="adi_soyadi" size="20" maxlenght="30" required="required" autofocus placeholder="adınız soyadınız"></td></tr>
+<tr><td>E-MAİL:</td><td><input name="mailadres"type="email" size="20" required autocomplate="off"></td></tr>
+<tr><td>WEB SİTESİ:</td><td><input name="webadres" type="url" required></td></tr>
+<tr><td>YAŞ:</td><td><input name="yas"type="number" required></td></tr>
+<tr><td>doğum yeri </td><td><select name="d_yeri"> 
+<optgroup label="ege">
+<option>denizli</option>
+<option>aydın</option>
+<option>muğla</option>
+</optgroup>
+<optgroup label="marmara">
+<option selected>istanbul</option>
+<option>bursa</option>
+</optgroup>
+<optgroup label="iç anadolu">
+<option>ankara</option>
+</optgroup>
+
+</select></td></tr>
+</tr><td><textarea name="oneri" cols="40" rows="5"></textarea size="50px"></td><tr>
+<tr><td>futbol</td><td><input type="checkbox" name="futbol"></td></tr>
+<tr><td>basketbol</td><td><input type="checkbox" name="basketbol"></td></tr>
+<tr><td>medeni hal</td><td>evli<input type="radio" name="medenihal" value="evli">bekar<input type="radio" name="medenihal" value="bekar"></td></tr>
+<tr><td><input type="image" value="" src="../images/buton2.jpg" height="25px" width="50px"></td><td><input type="reset" value="temizle"></td></tr>
+<tfoot><td colspan="2">EN YAKIN ZAMANDA SİZE GERİ DÖNÜŞ SAĞLAYACAĞIZ</td></tfoot>
+
+
+</form>
+</table>
+</body>
+</html>
+

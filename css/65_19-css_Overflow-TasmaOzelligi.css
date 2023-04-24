@@ -1,0 +1,16 @@
+.makale{
+    height: 200px;
+    width: 600px;
+    border: 3px solid black;
+    overflow:auto;
+}
+
+.resim{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    /*hidden  resmin taşan kısmını gizledi*/
+    /* overflow-x ve y dikey yada yatay eksende bir taşma var ise o kısmı gizler*/
+    overflow-x: scroll;
+    
+}

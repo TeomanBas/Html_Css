@@ -1,0 +1,67 @@
+.olcu{
+    height: 100px;
+    width: 1000px;
+    max-width: 100;
+    background-color:green;
+    border: 5px black solid;
+    border-radius: 20px;
+    border-top-color: yellowgreen;
+    /* max genişlik ne ise o uygulanır. daha sonra verilen genişlik o genişliği geçemez.
+    max veya minimum geçerlidir.*/
+}
+.kenar{
+
+    height: 75px;
+    width: 1000px;
+    background-color: gray;
+    border:  5px black solid ;
+    border-style: dotted;
+    border-color: red;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    /* önce border tanımlandıktan sonra border ile ilgili özellikler tanımlanmalıdır.önce özellikler sonra border tanımlanırsa
+    sadece default bir border gelecek ve özellikler aktif olmayacaktır.*/
+
+}
+a{
+
+    color: darkred;
+    text-decoration: none;    
+
+
+}
+/* 
+a:link  normal hali
+a:visited ziyaret edilmiş  
+a:hover  üzerine gelinmiş hali
+a:active mouse tıklanıldığı andaki hali
+*/
+
+a:link{
+    color: red;
+}
+a:visited{
+    color: green;
+}
+a:hover{
+    color:orange;
+    text-decoration: overline;
+}
+a:active{
+    color:black;
+    text-decoration: underline;
+}
+
+a:link, a:visited{
+
+    background-color: green;
+    color: white;
+    text-align: center;
+    text-decoration: none ;
+
+
+}
+a:hover, a:active{
+    background-color: #525252;
+    text-decoration: underline;
+}

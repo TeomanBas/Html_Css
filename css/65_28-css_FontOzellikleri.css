@@ -1,0 +1,40 @@
+.renk{
+    color: violet;
+}
+.fontfamily{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+    
+.fontsize{
+    font-size: xx-large;
+}
+
+.fontweight{
+    font-size: xx-large;
+    font-weight:10;
+}
+.textdecoration{
+    font-size: xx-large;
+    text-decoration:none;
+    /* none özellikle link eklendiğinde altının çizi olmamasını sağlar.bunun yanın yazının altını çiz üstünü çiz
+    vb biçimlemelerde verilebilir.*/
+}
+.genel{
+    font: bold italic 200% Verdana ,Helvetika, Arial, sans-serif ;
+    /* bu şekildede biçimlemeler yaparak yazılarımızı tek seferde bir çok yönden biçimlendirebiliyoruz.
+    Ancak renk tanımlaması yapamıyoruz onu ayrıca yapmamız gerekiyor.*/
+    /* benim hoşuma gitti şahsen daha sade bir biçimlendirme*/
+}
+.style{
+    font-style: normal;
+    /* burada yazıların biçimlerini bold italik vb ayarlayabiliyoruz.*/
+}
+
+.arkaplan{
+    background-image: url(../images/arkaplan.jpg);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    /*"repeat" arkaplanın tekrar etmemesini sağlar "attachment" ise "fixxed" özelliği ile sayfanın kaydırıldığı sürece
+    arkaplanın hep sabit kalmasını sağlayacaktır. */
+
+}

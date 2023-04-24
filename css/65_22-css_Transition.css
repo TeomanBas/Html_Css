@@ -1,0 +1,63 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: lawngreen;
+    transition:  4s ;
+}
+#a{
+    transition-timing-function:linear ;
+    
+}
+
+#b{
+    transition-timing-function: ease;
+    
+}
+
+#c{
+    transition-timing-function: ease-in;
+    
+}
+
+#d{
+    transition-timing-function: ease-out;
+    
+}
+
+#e{
+    transition-timing-function: ease-in-out;
+    
+}
+
+
+
+#a:hover{
+    
+    width: 500px;
+    background-color: red;
+}
+#b:hover{
+    width: 500px;
+    background-color: gray;
+}
+#c:hover{
+    width: 500px;
+    background-color:black;
+}
+#d:hover{
+    width: 500px;
+    background-color:blue;
+}
+#e:hover{
+    width: 500px;
+    background-color:blueviolet
+}
+
+a{
+    color: brown;
+    transition: 5s;
+}
+
+a:hover{
+    color: red;
+}

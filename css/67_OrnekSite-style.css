@@ -1,0 +1,140 @@
+ /* boslukları sıfırlama*/
+ *{
+	 margin:0px;
+	 padding:0px;
+ }
+ 
+#sayfa{
+	 background-color:gray;
+	 min-height:1200px;
+	 min-width:1200px;
+	 width:900px;
+	 margin:auto;
+	 border-style:solid;
+	 border-width:1px;
+ }
+ #banner{
+	 min-height:130px;
+	 width:700px;
+	 border-style:solid;
+	 border-width:0px;
+	 background:white;
+	 margin:auto;
+	 
+ }
+ /*logo*/
+ #logo{
+	 height:100px;
+	 width:200px;
+	 border-style:solid;
+	 background-color:black;
+	 border-radius:10px;
+	 position:relative;
+	 left:10px;
+	 top:10px;
+	 
+ }
+ 
+ #sosyal{
+	 height:20px;
+	 width:100px;
+	 border-style:solid;
+	 border-width:0px;
+	 background-color:white;
+	 border-radius:10px;
+	 float:right;
+	 position:relative;
+	 right:10px;
+	 bottom:5px;
+	 
+ }
+ 
+ #sosyal a img{
+	 height:16px;
+	 width:16px;
+	 border-style:solid;
+	 border-width:1px;
+	 border-radius:5px;
+	 }
+	 
+ #logo img{
+	 height:100px;
+	 width:200px;
+	 
+ }
+ 
+ #anamenu{
+	 height:30px;
+	 width:700px;
+	 margin:auto;
+	 background-color:white;
+	 border-style:solid;
+	 border-width:1px;
+	 
+ }
+ 
+ #anamenu ul{
+	 list-style-type:none;
+	  
+ }
+ #anamenu ul li{
+	 float:left;
+	 margin-left:22px;
+	 padding:7px;
+	 
+	 
+ }
+ 
+ #anamenu ul li a{
+	 text-decoration:none;
+	 color:black;
+	 height:40px;
+	 width:150px;
+	 border-width:1px;
+	 font-weight:bold;
+	 
+	  
+ }
+ 
+ #anamenu ul li a:link{
+	 color:black;
+	 
+ }
+ #anamenu ul li a:hover{
+	 color:gray;
+	 
+ }
+ #anamenu ul li a:active{
+	 color:red;
+	 font-size:17px;
+ }
+ 
+ /*icerik ve yan menu kodları*/
+ 
+ #icerik{
+	 min-height:500px;
+	 width:450px;
+	 border-style:solid;
+	 border-width:1px;
+	 background:white;
+	 margin:auto;
+	 float:left;
+	 position:relative;
+	 left:250px;
+	 
+ }
+ #yanmenu{
+	 min-height:500px;
+	 width:250px;
+	 border-style:solid;
+	 border-width:1px;
+	 background-color:white;
+	 margin:auto;
+	 float:right;
+	 position:relative;
+	 right: 250px;
+	 
+	 
+	 
+ }
+ 

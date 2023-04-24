@@ -1,0 +1,16 @@
+@media screen and (max-width:800px){
+    /* min-width:Apx | height maksimum yükseklik A px den büyükse aşağıdakileri yap */
+    /* max-width:Apx | height maksimum yükseklik A px den küçükse aşağıdakileri yap */
+.logo{
+    width: 100px;
+    height: 100px;
+        
+    }
+}
+
+@media screen and (min-width:500px) and (max-width:600px){
+    .logo1{
+        width:10px;
+        height: 10px;
+    }
+}

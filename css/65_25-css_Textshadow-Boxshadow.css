@@ -1,0 +1,26 @@
+body{
+    background-color: #b9b9b9;
+}
+
+
+h1{
+    text-shadow: 0px 0px 5px rgb(207, 25, 25);
+
+}
+h2{
+    color: darkgray;
+    text-shadow: -5px 0 blue, 0 1px  black ,0 -1px black ;
+}
+
+div{
+    background-color: seagreen;
+    height: 400px;
+    width: 400px;
+    box-shadow: 5px 5px 1px rgb(61, 60, 61);
+}
+.kutu2{
+    background-color: purple;
+    height: 400px;
+    width: 400px;
+    box-shadow: 5px 5px rgb(61, 60, 61),10px 10px blue,15px 15px green;
+}

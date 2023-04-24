@@ -1,0 +1,23 @@
+@font-face{
+    font-family: "SourceSansPro-Bold";
+    src: url("../font/Source_Sans_Pro/SourceSansPro-Black.ttf") format("truetype");
+    font-family: "asdf";
+    src: url("../font/Source_Sans_Pro/SourceSansPro-Italic.ttf") format("truetype");
+}
+
+p{
+    font-family:"SourceSansPro-Bold";
+}
+div{
+    font-family: "asdf";
+}
+
+/* link olarak çekilen fontların kullaımı ise şu şekildedir.
+div1{
+    font-family:'istenen birinci font','istenen ikinci font';
+}
+şeklinde div1 etiketine google fontlarını geçerli kılmış oluruz.
+
+
+
+*/

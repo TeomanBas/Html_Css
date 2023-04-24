@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form elementleri </title>
+</head>
+
+<body>
+    <H1> giriş yapınız</H1>
+        <form>
+                <fieldset>
+                    <legend>Üye bilgileri</legend><br>
+                    <label>ad soyad:</label><input type="text"><br>
+                    <label>erkek</label><input name="cinsiyet" type="radio" value="erkek"><br>
+                    <label>kadın</label><input name="cinsiyet" type="radio" value="kadın"><br>
+                    <!--raido butonlarının ikisinin seçilmemesi için name değerinin verilmesi gerekir. name değerleri
+                    aynı olduğu sürece sadece birisi seçilebilir-->
+                    <input type="checkbox" value="araba">arabam var<br>
+                    <input type="checkbox" value="kaykay">kaykayım var<br>
+                    <input type="checkbox" value="uçak">uçağım var<br>
+                    <label> mail adresi:</label><input type="email"><br>
+                    <label>kulllanıcı adı: </label><input type="text"><br>
+                    <label> tel no:</label><input type="tel" ><br>
+                    <label>doğum tarihi:</label><input type="date"><br>
+                    <label>parola:</label><input type="password"><br>
+                    <select>
+                        <optgroup label="diğer iller">
+                            
+                            <option> seçenek 1</option>
+                            <option> seçenek 2</option>
+                            <option> seçenek 3</option>
+                            <option> seçenek 4</option>
+                            <option> seçenek 5</option>
+                            <option> seçenek 6</option>
+                            <option> seçenek 7</option>
+                            <option> seçenek 8</option>
+                            <option> seçenek 9</option>
+                        </optgroup>   
+                        <optgroup label="merkezi iller">
+                            <option>istanbul</option>
+                            <option>ankara</option>
+                            <option>denizli</option>
+                            <option>manisa</option>
+                        </optgroup> 
+                    </select>
+                    <label> mesajınız :</label><br><textarea cols="80" rows="30"> </textarea>
+                    <br>
+                    <input type="submit" value="gönder"><input type="reset" value="temizle">
+                </fieldset>
+        </form>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    
+
+
+
+</body>
+</html>

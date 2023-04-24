@@ -1,0 +1,24 @@
+.p1{
+
+    background-color: red;
+    /* margin (dış boşlukrur)öğenin etrafındaki nesnelerler olan uzaklığını belirlemek için kulllanılan bir özellik.büyütme ölçeği değiştiğinde
+    orantısal bir şekilde etrafındaki boşlukları koruyacaktır.*/
+    margin-top: 0%;
+    margin-bottom: 25px;
+    margin-right: 35px;
+    margin-left: 35px;
+    /*margin: üst sağ alt sol; şeklindede tek satır kod ile bütün tanımlamaları yapbiliyoruz.*/
+}
+
+.p2{
+    background-color:  orange;
+    /* dış değil iç boşluktur.*/
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    /*padding: üst sağ alt sol; şeklindede tek satır kod ile bütün tanımlamaları yapbiliyoruz.*/
+    
+
+
+}

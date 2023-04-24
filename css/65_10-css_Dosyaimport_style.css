@@ -1,0 +1,5 @@
+@import url(65_10-css_Dosyaimport_header.css);
+@import url(65_10-css_Dosyaimport_content.css);
+@import url(65_10-css_Dosyaimport_footer.css);
+
+/*<!-- böylelikle html dosyamızda karmaşa yapmadan kolay bir şekilde kullanacağımız css dosyalarını html dosyamıza çağırmış olduk -->
