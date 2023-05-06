@@ -1,0 +1,11 @@
+.grup1{
+    display:block;
+    color:red;
+    border-style: double;
+}
+
+.grup2{
+    display: inline;
+    color:blue;
+    border-style: double;
+}

@@ -1,0 +1,142 @@
+#_1:active{
+    color:red;
+}
+
+option:checked{
+    color: red;
+    background-color: gray;
+    font-size: 15px;
+}
+select{
+    width:100px;
+    font-size: 12px;
+}
+input:disabled{
+    background: #cccccc;
+}
+
+#bos_inpt:empty{
+    height: 10px;
+    background-color: red;
+}
+
+#inpt1:enabled{
+    background: blue;
+}
+
+#fchld1:first-child b{
+    background: blue;
+}
+
+option:last-child{
+    background: red;
+    color:red;
+}
+
+li:first-of-type{
+    background: orange;
+}
+
+li:last-of-type{
+    background: purple;
+}
+
+
+#inpt2:focus{
+    background: green;
+}
+
+#hvr:hover{
+    background-color: green;
+    color:white;
+    text-transform: uppercase;
+}
+
+#irng:in-range{
+    background-color: green;
+    color: white;
+}
+#irng{
+    font-size:20px;
+}
+
+#invld:invalid{
+    background-color: red;
+    color: white;
+}
+#invld{
+    font-size: 20px;
+
+}
+
+.plng:lang(tr){
+    color: green;
+}
+.plng:lang("en"){
+    color:black;
+    margin-left:20px;
+}
+
+#lnk:link{
+    color:yellow;
+    font-size:25px;
+    text-shadow: 0px 0px 10px 0px gray;
+}
+
+#notornk p:not(.ab){
+    color:plum;
+}
+#notornk p:not(.ae){
+    color: gray;
+}
+
+#nthchld li:nth-child(2){
+    color:aqua;
+}
+#nthchld li:nth-last-child(2){
+    color:blueviolet;
+}
+
+#nthchldtyp li:nth-of-type(3){
+    background-color:red;
+}
+#onlyoftyp p:only-of-type{
+    background-color:green;
+}
+
+#optnl input:optional{
+    color:red;
+}
+
+#orng:out-of-range{
+    color:red;
+}
+
+#ro input:read-only{
+color:red;
+}
+
+#ro input:read-write{
+    color:green;
+}
+
+#rqrd input:required{
+    color: aqua;
+}
+
+:root{
+    background-color: gray;
+}
+
+:target{
+    background-color: peru;
+    border: 1px;
+}
+
+#vld input:valid{
+    color: green;
+}
+
+#vstd a:visited{
+    color:darkorange;
+}

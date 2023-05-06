@@ -1,0 +1,9 @@
+#reklam_kutusu{
+    padding:10px;
+    background-color: grey;
+    border: 1px;
+
+}
+#kapat_btn{
+    float:right;
+}

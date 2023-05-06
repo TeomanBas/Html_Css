@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/90_Pseudo-SozdeSiniflar.css">
+    <title>Pseudo Sözde Sınıflar</title>
+</head>
+<body>
+    <h1>:active</h1>
+    <a id="_1" href="">:active -aktif link seçimi</a>
+
+    <h1>:checked</h1>
+    <select>
+        <option value="1">A</option>
+        <option value="2">B</option>
+        <option value="3">C</option>
+        <option value="1">D</option>
+        <option value="1">E</option>
+    </select>
+
+    <h1>:disabled</h1>
+    <input type="text" placeholder="admin"  disabled>
+
+    <h1>:empty</h1>
+    <div><input type="text" name="" id="bos_inpt"></div>
+
+    <h1>:enabled</h1>
+    <input type="text"  id="inpt1" >
+
+    <h1>:first-child ve last-child</h1>
+    <div>
+    <p id="fchld1">Lorem ipsum dolor sit amet consectetur <b>mavi1</b>adipisicing elit. 
+        Iusto rerum harum no<b>mavi2</b>strum. Ipsum possimus nobis neque modi nat<b>mavi3</b>us distinctio, 
+        dicta beatae inventore ut ab aut, <b>mavi4</b>quas maxime maiores mollitia rerum!</p>
+        </div>
+        <div>
+            <p id="fchld2">Lorem ipsum dolor sit amet consectetur <b>mavi1</b>adipisicing elit. 
+                Iusto rerum harum no<b>mavi2</b>strum. Ipsum possimus nobis neque modi nat<b>mavi3</b>us distinctio, 
+                dicta beatae inventore ut ab aut, <b>mavi4</b>quas maxime maiores mollitia rerum!</p>
+                </div>
+
+    <h1>:first-of-type ve last-of-type</h1>
+    <li>madde 1</li>
+    <li>madde 2</li>
+    <li>madde 3</li>
+    <li>madde 4</li>
+
+    <h1>:focus</h1>
+    <input type="text" id="inpt2">
+
+    <h1>:hover</h1>
+    <a href="" id="hvr">:hover için hazırlanmış link</a>
+
+    <h1>:in-range</h1>
+    <input type="number" id="irng" min="0" max="10" value="0">:range renk örneği</a>
+
+    <h1>:invalid</h1>
+    <input type="email" id="invld" value="mail adresini gir">
+
+    <h1>:lang(tr)</h1>
+    <p lang="tr" class="plng">Merhaba</p>
+    <p lang="en" class="plng" > hello</p>
+
+    <h1>:link</h1>
+    <a href="" id="lnk"> deneme linki</a>,
+
+    <h1>:not()</h1>
+    <div id="notornk">
+    <p id="ab">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, sunt! Corrupti sapiente, dolorum libero recusandae atque nam possimus laboriosam aut numquam, voluptatibus a mollitia enim in, sunt ipsam dolorem veritatis.</p>
+    <p id="ac">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, sunt! Corrupti sapiente, dolorum libero recusandae atque nam possimus laboriosam aut numquam, voluptatibus a mollitia enim in, sunt ipsam dolorem veritatis.</p>
+    <p id="ad">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, sunt! Corrupti sapiente, dolorum libero recusandae atque nam possimus laboriosam aut numquam, voluptatibus a mollitia enim in, sunt ipsam dolorem veritatis.</p>
+    <p id="ae">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, sunt! Corrupti sapiente, dolorum libero recusandae atque nam possimus laboriosam aut numquam, voluptatibus a mollitia enim in, sunt ipsam dolorem veritatis.</p>
+    <p id="af">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, sunt! Corrupti sapiente, dolorum libero recusandae atque nam possimus laboriosam aut numquam, voluptatibus a mollitia enim in, sunt ipsam dolorem veritatis.</p>
+    <p id="ag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, sunt! Corrupti sapiente, dolorum libero recusandae atque nam possimus laboriosam aut numquam, voluptatibus a mollitia enim in, sunt ipsam dolorem veritatis.</p>
+</div>
+
+<h1>:nth-child ve nth-last-child</h1>
+<div id="nthchld">
+    <li>madde 1</li>
+    <li>madde 2</li>
+    <li>madde 3</li>
+    <li>madde 4</li>
+</div>
+
+<h1>:nth-of-type </h1>
+<div id="nthchldtyp">
+    <li>madde 1</li>
+    <li>madde 2</li>
+    <li>madde 3</li>
+    <li>madde 4</li>
+</div>
+
+<h1>:only-of-type</h1>
+<div id="onlyoftyp">
+<p>only of type</p>
+</div>
+
+<h1>:optional</h1>
+<div id="optnl">
+<input type="text" name="" id="" required>
+<input type="text" name="" id="">
+<input type="text"> 
+</div>
+
+<h1>:out-of-range</h1>
+<input type="number" min="0" max="10" id="orng">
+
+
+<h1>:read-only ve :read-write</h1>
+<div id="ro">
+<input type="text" placeholder="yazma korumalı" readonly>
+<input type="text">
+<input type="text">
+
+</div>
+
+<h1>:required</h1>
+<div id="rqrd">
+    <input type="text" name="" id="" required>
+    <input type="text" name="" id="" required>
+    <input type="text" name="" id="">
+    <input type="text" name="" id="">
+
+
+</div>
+
+<h1>:root</h1>
+<p>kök element herzaman body etiketi baz alınır :root ile  background a eriştirk arka plan gri yaptık</p>
+<hr>
+
+<h1>:target</h1>
+<p>target etiketi olay güdümlü çalışır bir form elementine veya linke tıklandığında # operatörü ile aynı sayfada
+    yeniden link verip (# işareti ile link verince aynı sayfada kalınır ama bir hedef de verilebilir )
+    parametre olarak id tanımlayıcısı da eklenerek ilgili element hedeflenir işte bu olayda hedeflenen elemente stil uygulanabilir
+    target yönlendirilen sayfayı kastediyor gibi bişey anladım ben bundan
+</p>
+<input type="button" name="" id="" value="1.satiri hedefle" onclick='window.location.href="#satir_1"'>
+<a href="#satir_2">ikinci satiri hedefle</a>
+<br>
+<p id="satir_1">burasi birinci satır</p>
+<p id="satir_2">burasi ikinci satır</p>
+
+<h1>:valid</h1>
+<div id="vld">
+    <b>web adresi girini</b>
+<input type="url">
+<br><br>
+<b>mail adresinizi giriniz</b>
+<input type="email">
+<br><br>
+<b>numara seçiniz</b>
+<input type="number" min="5" max="10" step="1" name="" id="">
+</div>
+
+<h1>:visited</h1>
+<div id="vstd">
+<a href="#2">anasayfa</a><br>
+<a href="#1">babasayfa</a><br>
+<a href="#3">kardessayfa</a><br>
+<a href="#4">dedesayfa</a><br>
+</div>
+
+
+
+
+
+</body>
+</html>

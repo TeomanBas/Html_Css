@@ -1,0 +1,296 @@
+/*------------------------------------------------------------*/
+/*-------------------------css notları------------------------*/
+/*--------burası css bölümleri için bayrak tanımlaması--------*/
+/*
+css kodları tanımlamak
+p{color:red; text-align:center}
+p: selector-seçici
+():decleration-deklerasyon
+red ve center :values-değerler
+: : colon iki nokta üst üste
+; : semi colon-noktalı virgul, satır sonu
+
+sitenin css kodlarında hatalar https://jigsaw.w3.org/ dan kontrol edilebilir
+-------------------------------------------------------------------------------------------
+css kodları satır içine veya html etiketlerinin style özelliği kullanılarak yazılabilir ancak olması gereken 
+head etiketlerinin içerisine 
+<link href="stil_dosyasi.css" type="text/css" rel="stylesheet" />
+veya
+<style type="text/css">@import "stil_dosyasi.css";</style>
+şeklinde de dosyaya dahil edilebilirler.
+-------------------------------------------------------------------------------------------
+
+birden çok css dosyamız olabilir örneğin linkler için body için başlıklar için vb. bunları ana html
+dosyasına tek bir css dosyasını dahil ederek ana css dosyasına import etmekte mümkündür
+
+@import url("menu.css");
+@import url("link.css");
+veya başka bir kullanımı
+@import "link.css";
+
+-------------------------------------------------------------------------------------------
+css dosyasında yazılan css kodları nedeniyle bazen css dosyasının boyutu büyük olur bunu engellemek için
+aralardaki bırakılan gereksiz boşluklar whitespace ler temizlenmelidir
+
+p{
+color:red; 
+text-align:center
+margin=1px;
+
+}
+
+şeklinde yazılmış bir css kodunu p{color:red;text-align:centermargin=1px;} şeklinde tek bir satır olarak
+kullanırsak dosya boyutu düşer ve sayfa yüklenirken bekleme sorunları gibi şeyler için çözüm olabilir.
+
+
+class ları aşağıdaki şekilde kullanabiliriz
+.class1{
+    display: inline;
+    color:blue;
+    border-style: double;
+}
+-------------------------------------------------------------------------------------------
+
+bazı css kodları bazı tarayıcılarda desteklenmez yada o tarayıcıdaki yorumlama motorları içn farklı bir 
+deyime sahip olabilir 
+
+p{
+-ms-filter:"progid:DXImageTransform.MicrosoftAlpha(Opacity=50)";    IE 8
+filter: alpha(opacity=50);  Internet Explorer 5,6,7,8,
+-moz-opacity:0.5;   Eski mozilla firefox              
+-op-opacity:0.5;    Eski opera
+-webkit-opacity:0.5;    eski webkit tarayıcılar (Safari,chrome)
+-khtml-opcity:0.5;  çok eski sürüm safari ve konqeror
+opcity:0.5;
+
+}
+
+internet explorer - trident
+mozilla firefox - gecko
+opera - presto
+safari ve chrome webkit
+yorumlama motorlarını kullanır.
+
+css3 ün hangi özelliği hangi tarayıcı destekleniyor bunu öğrenmek için coniuse.com adresinden bakılabilir.
+
+
+-------------------------------------------------------------------------------------------
+#(id_değeri) id seçicidir
+örneğin içeriğin bir div kutusu içerisinde olduğunu düşünürsek # işareti id sinden erişim sağlayıp
+gerekli property tanımlamaları gerçekleştirilebilir.
+#div1{
+    width:300px;
+    height:200px;
+    padding: 15px;
+    border:5px solid grey;
+    margin: 30px;
+    box-sizing=content-box;
+}
+-------------------------------------------------------------------------------------------
+box-sizing content-box ve border-box values leri vardır bunların farkı kutunun ölçülerine borderların dahil
+edilip edimeyeceğini belirler örn border-box olarak tanımlanmış bir box-sizing da kutu 300 olarak tanımlanan
+ölçülerinden fazla olamaz dolayısı ile borderlar kutunun iç kısmına doğru kalınlaşır.content-sizing de
+ise borderlar dışarıya etki eder yani dışarıya doğru kalınlaşır.
+
+width veya height değerinden % kullanılırsa ölçüler içinde bulunduğu konumun uzunluk değerine göre 
+değişkenlik gösterir uzunluk 100 ise %20 olarak belirlenen bir height değeri 20 birim olacaktır.
+-------------------------------------------------------------------------------------------
+element pozisyonlama modelleri
+html5 etiketlerini x ve y kordinatlarına göre sabitleyebiliriz left,right,top,bottom gibi özellikler sayfanın sağa veya aşağıya 
+doğru hep belli mesafelerde kalmasını sağlar 
+
+
+static(olduğu gibi)
+elemente herhangi bir pozisyon değeri verilmediğinde bu model uygulanır
+#div1{
+   position:static;
+}
+
+fixed(sabitlemek)
+bu özellik kullanıldığında element ekrandar sabit kalır diğer nesnelere göre yeri değişmez genelde
+sayfaların sağında ve solundaki reklam alanları için kullanılır.
+#div1{
+   position:fixed;
+}
+
+relative(göreceli)
+kendinden bir önceki elemente göre kendini konumlandırır.bu özellik kullanılırsa z-index değeri otomatik olarak 1 değer artar ve element kendini bir 
+üst katmana çeker
+#div1{
+   position:relavive;
+}
+
+absolute(mutlak)
+tarayıcının sol üst köşesine göre hiza alır
+#div1{
+   position:absolute;
+}
+
+görünmez(none)
+bir div görünmez yapılabilir bu mtotlarla genelde css menüler dediğimiz navigasyon araçları yapılır.veya sayfa
+ortasında açılan reklam kapatılması için x butonuna tıklanması örneği de verilebilir div h p form footer section gibi
+elementlere uygulanabilir
+örnek bir uygulama: 86_ReklamKapatmaOrnek.html
+
+-------------------------------------------------------------------------------------------
+display:block;(block)
+block yeni satıra alırve sayfada bir block olarak gösterir yani bir çok span etiketini tek bir div içerine koyarsak
+ve display:block; olarak bir css tanımlaması yaparsak bu span etiketleri alt alt geçeceklerdir
+
+display:inline(satır içi)
+eğer span etiketlerinin inline olaraktanımlarsak hepsi bir satıra sıra ile dizilecek sığmayaca çalışacaklardır.
+
+örnek : 87_block-inline_cssOrnek.html
+
+-------------------------------------------------------------------------------------------
+
+Görünmezlik (visibility) ve görüntülememe (display:none) farkı
+css te iki türlü şekilde elementlerin  görünürlüğü kapatılabilir.visibility visible | hidden
+özelliği ile nesneler görünmez olur ancak kapladıkların alan hala orada olur display :none 
+tanımlaması ile de nene tamamen sayfadan kaldırılır bir örnek üzerinden görelim.
+
+örnek: 88_visibility-displaynone_farki.html
+
+-------------------------------------------------------------------------------------------
+
+SEÇİCİLER
+
+ELEMENT SEÇİCİ: etiketlerin seçiminde kullanılır bu şekilde kullanırsak bu etiket ile aynı olan tüm 
+etiketler için özellikler uygulanmış olur
+
+<h1>element seçici</h1>
+<h2>element seçici</h2>
+<h3>element seçici</h3>
+
+h1{
+    text-align:center;
+    font-size: 40px;
+    font-family:Arial;
+
+}
+veya birden fazla element için ortak bir biçimlendirmede uygulanabilir
+h1,h2,h3{
+    text-align:center;
+    font-size: 40px;
+    font-family:Arial;
+
+}
+
+CLASS SEÇİCİLER: eğer bir sayfa içerisinde birden fazla div etiketimiz varsa bunları gruplayabiliriz
+ve sadece istediğimiz gruba ait div etiketleri için belli biçimlendirmeler yapabiliriz.
+<div class=grup3>grup 3</div>
+<div class=grup2>grup 2</div>
+<div class=grup1>grup 1</div>
+<div class=grup1>grup 1</div>
+<div class=grup1>grup 1</div>
+
+.grup1{
+...grup1 class ındaki divler için biçimlendirme işlemleri...
+
+}
+
+ID SEÇİCİLER: class seçicilerine benzer Ancak id tanımlamaları sadece tek bir defa olabilir.id ler benzersiz olmalıdır.
+
+<div id=kimlik1>tekil </div>
+
+#kimlik1{
+    css tanımlamaları...
+}
+
+ELEMENT İÇİNDEKİ BAŞKA ELEMENTİ SEÇMEK: bir element içerisindeki başka bir elementi  seçebiliriz.
+
+<p>
+<govde>
+<a href="anasayfa"> anasayfa</a>
+</govde>
+</p>
+
+p govde{
+    css tanımlamaları...
+
+}
+eğer p nin bir class ı olsaydı ve class altındaki alt elementlere erişmek isteseydik aşağıdaki gibi yapabilirdik
+
+<p class="paragraf">
+<govde>
+<a href="anasayfa"> anasayfa</a>
+</govde>
+</p>
+
+p.paragraf baglantı{
+    css tanımlamaları...
+}
+
+
+-------------------------------------------------------------------------------------------
+
+!İMPORTANT İLE STİL EZME (OVERRİDE)
+bir etiket için önceden tanımlanmış bir css tanımlaması var ancak biz bunu kendi istediğimiz şekilde değiştirmek 
+istiyorsak örnek olarak bir yazı ver mavi rekte biz bunu kırmızı yapmak istiyorsak bu css tanımlamasını override edebiliriz.
+
+<p>
+örnek yazı
+</p>
+
+tanımlanan css
+p{
+    color:blue;
+}
+
+override işlemi için css tanımlaması
+p{
+    color:red !important;
+}
+
+-------------------------------------------------------------------------------------------
+PSEUDO (sözde) SEÇİCİLER VE ELEMENTLER
+
+::after | p::after | <p> elemanının içeriğinden sonra ekleme yapar
+::before | p::before | <p> elemanının içeriğinden önce ekleme yapar
+::first-letter | p::first-letter | <p> elemanının içeriğinin ilk harfini seçer
+::first-line | p::first-line | <p> elemanının içeriğinin ilk satırını seçer
+::selection | p::selection| kullanıcı tarafındna seçilen elemanı hedefler.
+
+örnek : 89_Pseudo_Seciciler.html
+
+SÖZDE (PSEUDO) SINIFLAR
+
+:active -aktif link seçimi
+:checked -<input> elementi içinde bütün işaretli olanların seçimi
+:disabled -<input> elementi içinde bütün işaretli olmayanların seçimi
+:empty -hedeflenen etiketlerinin boş olanlrı
+:enabled -<input> elementi içinde bütün aktif olanların seçimi
+:first-child - hedeflenen elementin ilk alt elementinin seçimi
+:first-of-type -hedeflenen elementin aynı türdeki ilk alt elementinin seçimi
+:focus -odaklanılan mouse ile üzerine gelinen elementin seçimi
+:hover -mouse ile üzerine gelinen link
+:in-range -<input> elementleri içinde belirli bir aralık içinde olan elementlerin seçimi
+:invalid -<input> elementleri içinde geçerli bir değer içermeyen elementlerin seçimi
+:lang(dil) - lang"" özelliği  olan metin elementlerinin parametreye uyanlarının seçimi
+:last-child -hedeflenen elementin son alt elementinin seçimi
+:last-of-type -hedeflenen elementin aynı türdeki son alt elementinin seçimi
+:link -tıklanmamış linklerin seçimi
+:not(seçici) -parametre olarak verilen element dışındaki tüm elementlerin seçimi
+:nth-child(n) -parametre olarak verilen değere göre o sıradaki elementi seçer paramtre olarak 2 verilirse o 
+elementin 2. olanını seçer.parametre even verilirse çift sıralı olanları seçer odd parametresi verilirse tek sıralı olanları seçer
+veya Xn+0 gibi bir formül de kullanılabilir bu formüle göre X değeri 4 olursa 4 ve 4 ün katı olan elementler seçilir
+bu kurallar :nth-last-:child(n) ve için :nth-of-type(n) de geçerlidir.
+:nth-last-child(n) -nth-child(n) işlemi sondan başa doğru elementlerin seçimi
+:nth-of-type(n) -nth-child(n) işlemi aynı türdeki elementlerin seçimi
+:only-of-type -aynı türde üst elementi olan elementlerin seçimi
+:only-child -sadece bir tane alt elementi olan elementlerin seçimi
+:optional -<input> elementlerinden required tanımı olmayanların yani doldurulması zorunlu olmayanların seçimi
+:out-of-range -<input> elementlerinde belirlenen aralık dışında bir değer girilen elementin seçimi
+:read-only -<input> elementlerinden readonly tanımı olanların yani sadece okunabilir olanların seçimi
+:read-write -<input> elementlerinden readonly tanımı olmayanların yani hem okunabilir hemde yazılabilir olanların seçimi
+:required -<input> elementlerinden required tanımı olanların yani doldurulması zorunlu olanlrın seçimi
+:root -döküman kök elementinin seçimi
+:target - o an aktif olan elementin seçimi
+:valid -<input> elementlerinden doğru verilere sahip olanların seçimi
+:visited -bütün tıklanmış olan linklerin seçimi
+
+örnekler 90_Pseudo-SozdeSiniflar.html
+
+
+
+*/
