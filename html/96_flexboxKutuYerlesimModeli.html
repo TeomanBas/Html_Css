@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox kutu yerleşim modeli</title>
+    <style>
+        #kutu{
+            width: auto;
+            height: 400px;
+            display: flex;
+            border:2px solid silver;
+            /*tek sütunda dizme
+            row: aynı satırda dizilir
+            row-reverse: aynı satırda tersten dizilir
+            colomn:kolon şeklinde yukarıdan aşağıya dizilir
+            colomn-reverse:kolon şeklinde aşağıdan yukarıya dizilir.
+            */
+            flex-direction: row;
+            /*align-items
+            flex-start:sola yaslama
+            flex-end:sağa yaslama
+            flex-direction:row olduğunda üste yada aşağıya hizalanabilir 
+            ancak flex-direction:column iken sağa ve sola yaslanabilir
+            center:ortalar
+
+            */
+            align-items:center;
+
+            /*satırda ortamala yapar*/
+            justify-content: center;
+            
+        }
+
+        #logo{
+            /*otomatik genişlik
+            width: auto;*/
+            width: auto;
+            text-align: center;
+            border:2px solid silver;
+            font-size: 30px;
+            padding: 20px;
+        }
+
+        .altkutu{
+            /*sabit genişlik*/
+            width:150px;
+            margin: 10px;
+            padding: 5px;
+            background-color: silver;
+            
+        }
+        a{
+            background-color: silver;
+            color: black;
+            padding: 5px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        #altkutu1{
+            /*flex : oransayısı ile kutu içerisinde olan elemanlara kutu genişliğinden ne kadar pay
+            alacaklarını oranlaması sayı değeri verilir buradaki örnekte 3 + 1 + 1 şeklinde oranlar verdik
+            bu oranlara göre genişlik ayarlanıyor*/
+            flex:3;
+            margin: 10px;
+            padding: 5px;
+            background-color: silver;
+        }
+
+        #altkutu2{
+            flex:1;
+            margin: 10px;
+            padding: 5px;
+            background-color: silver;
+        }
+        #altkutu3{
+            flex:1;
+            margin: 10px;
+            padding: 5px;
+            background-color: silver;
+        }
+
+        
+
+        #altkutu1a{
+            /*sabit genişlik*/
+            width:350px;
+            margin: 10px;
+            padding: 5px;
+            background-color: silver;
+            
+        }
+        #altkutu2a{
+            /*sabit genişlik*/
+            width:550px;
+            margin: 10px;
+            padding: 5px;
+            background-color: silver;
+            
+        }
+        #altkutu3a{
+            /*sabit genişlik*/
+            width:350px;
+            margin: 10px;
+            padding: 5px;
+            background-color: silver;
+            
+        }
+    </style>
+</head>
+<body>
+    <p id="logo">site ismi</p>
+    <nav>
+        <a href="#">sayfa 1</a>
+        <a href="#">sayfa 2</a>
+        <a href="#">sayfa 3</a>
+    </nav>
+    <div id="kutu">
+        <div class="altkutu">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio fugiat, soluta accusamus modi totam repellat aliquid, autem in dolores unde molestias. Facilis rem libero reiciendis laborum explicabo accusantium minima quasi!</div>
+        <div class="altkutu">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, veritatis? Beatae illo dolorum iste nulla enim. Temporibus at possimus cumque iure ad itaque enim, voluptatibus labore corporis, odio blanditiis voluptate.</div>
+        <div class="altkutu">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, quod sapiente? Voluptatem, suscipit molestias sint sunt adipisci neque. Reiciendis non nam omnis laboriosam quas soluta, similique ipsa delectus repudiandae rerum.</div>
+    </div>
+
+    <div id="kutu">
+        <div id="altkutu1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio fugiat, soluta accusamus modi totam repellat aliquid, autem in dolores unde molestias. Facilis rem libero reiciendis laborum explicabo accusantium minima quasi!</div>
+        <div id="altkutu2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, veritatis? Beatae illo dolorum iste nulla enim. Temporibus at possimus cumque iure ad itaque enim, voluptatibus labore corporis, odio blanditiis voluptate.</div>
+        <div id="altkutu3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, quod sapiente? Voluptatem, suscipit molestias sint sunt adipisci neque. Reiciendis non nam omnis laboriosam quas soluta, similique ipsa delectus repudiandae rerum.</div>
+    </div>
+    <div id="kutu">
+        <div id="altkutu1a">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio fugiat, soluta accusamus modi totam repellat aliquid, autem in dolores unde molestias. Facilis rem libero reiciendis laborum explicabo accusantium minima quasi!</div>
+        <div id="altkutu2a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, veritatis? Beatae illo dolorum iste nulla enim. Temporibus at possimus cumque iure ad itaque enim, voluptatibus labore corporis, odio blanditiis voluptate.</div>
+        <div id="altkutu3a">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, quod sapiente? Voluptatem, suscipit molestias sint sunt adipisci neque. Reiciendis non nam omnis laboriosam quas soluta, similique ipsa delectus repudiandae rerum.</div>
+    </div>
+    
+</body>
+</html>

@@ -291,6 +291,87 @@ bu kurallar :nth-last-:child(n) ve için :nth-of-type(n) de geçerlidir.
 
 örnekler 90_Pseudo-SozdeSiniflar.html
 
+-------------------------------------------------------------------------------------------
+css3 kodlarını test etmek için codepen.io ve hazır css3 kodları kullanmak için css3generator.com
+adresinden faydalanılabilir.
+
+-------------------------------------------------------------------------------------------
+css3 akıllı seçiciler ve komut desenleri
+
+[özellik^=değer] : elementin başladığı karakter grubu belirlenecek
+[özellik$=değer] : elementin bittiği karakter grubu belirlenecek
+[özellik*=değer] : elementin içinde geçen karakter grubu belirlenecek.
+
+örnek :
+p[id^="bagla"]{
+    idsi bagla ile başlayan tüm id değerine ait olan elementler için
+    geçerli bir css biçimlendirmesi.
+}
+
+-------------------------------------------------------------------------------------------
+rgba(alpha) şeffaf renkler
+color:rgba(255,00,0,5); (kırmızı renk kanalı,yeşil renk kanalı,mavi renk kanalı,0-1 arası alfa değeri)
+buradaki kod ile şeffaf bir kırmızı renkte yazı biçimlendirmesi yapılabilir.
+
+-------------------------------------------------------------------------------------------
+gradyan renk geçişleri 
+bu özelliğin her tarayıcıda desteği yoktur webkit ve moz olarak tanımlanır sebebi ise 
+tarayıcı destek sorunudur.
+background-image:-webkit-gradient(lineer|radial,left bottom,left top-color-stop(1,#00ffff) color-stop(0,#ffff00));
+(geçiş türü,başlangıç noktası,bitiş noktası,hangi renkten, başlanacağı,hangi renkte biteceği)
+
+background-image:-moz-linear-gradient(center bottom,#00ffff 0pt,#ffff00 100%);
+(balangıç bitiş,başlangıç rengi,bitiş rengi,transparanlık)
+
+-------------------------------------------------------------------------------------------
+web fontları
+google.com/fonts adresine girerek isteğimiz fontu seçip onun için üretilen linki sayfamızın head etiketleri arasına yapıştırabilir
+ordaki fontları kullanabilmiş oluruz
+
+-------------------------------------------------------------------------------------------
+transform özelliği ile web sayfası içerisinde tanımlanan kutu modellerini veya diğer
+neneleri belirli açılarda döndürebilir eğebilir genişletip daraltabiliriz bu şekilde hazır kodlar için css3generator.com güzel bir kaynak
+
+c33generator.com üzerinden oluşturulan 5 farklı tarayıcı için hazır bir kod yapısı
+-moz-transform: scale(1) rotate(45deg) translateX(10px) translateY(10px) skewX(0deg) skewY(20deg);
+-webkit-transform: scale(1) rotate(45deg) translateX(10px) translateY(10px) skewX(0deg) skewY(20deg);
+-o-transform: scale(1) rotate(45deg) translateX(10px) translateY(10px) skewX(0deg) skewY(20deg);
+-ms-transform: scale(1) rotate(45deg) translateX(10px) translateY(10px) skewX(0deg) skewY(20deg);
+transform: scale(1) rotate(45deg) translateX(10px) translateY(10px) skewX(0deg) skewY(20deg);
+
+ornek: 92_css_transform.html
+
+
+-------------------------------------------------------------------------------------------
+
+çoklu sütun şablonları
+
+örnek :93_css_CokluSutunSablonlari.html
+
+-------------------------------------------------------------------------------------------
+css3 ile animasyon
+ornek :94_css_animasyon.html
+-------------------------------------------------------------------------------------------
+css3 ile animasyon geçiş ivmeleri (Easing)
+
+ornek: 95_cssGecisIvmeleriEasing.html
+
+-------------------------------------------------------------------------------------------
+flexbox özelliği
+ekran boyutuna göre biçim alabilen büyüyen veya küçülen sayfaların biçimlendirilmesi için kullanılır
+display:float özelliklerin den bir farkı kamaşık kutu modelleri için kullanılabiliyor olmasıdır
+
+örnek:flexboxKutuYerlesimModeli.html
+
+-------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
 
 
 */
