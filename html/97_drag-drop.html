@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="97_stil.css">
+	<script src="97_script.js"></script>
+	<meta charset="utf8" />
+	<p>Resimler ile yazıları doğru eşleştirin</p>
+</head>
+<body>
+	<!-- dragable sürüklenebilir bir özellik kazandırır
+		ondragstart sürüklenmeye başandığında hangi fonksiyonun çalışmaya başlayacağı belirtilir
+		parametre olarak event şeklinde bu olayı gösteriyoruz.
+		ondragover olay yönetisi ile tutulup bırakılma sonrası olayı yöneticisini kaldırmak içi kullanılır
+		ondrop bakılma olayıdır-->
+	<div><img src="../images/kopek.png" draggable="true" ondragstart="tut(event)" id="1"></div>
+	<div id="kutu1" ondrop="birak(event)" ondragover="tasinmaDurumu(event)">Köpek</div>
+	  
+	<div><img src="../images/balik.png" draggable="true" ondragstart="tut(event)" id="2"></div>
+	<div id="kutu3" ondrop="birak(event)" ondragover="tasinmaDurumu(event)">Uğur Böceği</div>
+
+	<div><img src="../images/ugurbocegi.png" draggable="true" ondragstart="tut(event)" id="3"></div>
+	<div id="kutu2" ondrop="birak(event)" ondragover="tasinmaDurumu(event)">Balık</div>
+	  
+	<p id="sonuc"></p>
+</body>
+</html>
