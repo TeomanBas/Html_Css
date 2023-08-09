@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid View Uygulaması</title>
+    <style>
+        *{
+            /*padding, margin ve border değerlerinin kutuların boyutlarını etkilememesi için tanımlanır.
+            kutular kendi içerisinde boyutlanır.dışarıya boyutları taşmaz.*/
+            box-sizing: border-box;
+            /*varsayılan olarak belirlenen iç ve dış boşluklar sıfırlanır.*/
+            margin: 0px;
+            padding: 0px;
+        }
+        /*kutu genişlikleri ayarlanıyor yani grid boyutları*/
+        .col-1{width: 8.33%;}
+        .col-2{width: 16.66%;}
+        .col-3{width: 25%;}
+        .col-4{width: 33.33%;}
+        .col-5{width: 41.66%;}
+        .col-6{width: 50%;}
+        .col-7{width: 58.33%;}
+        .col-8{width: 66.66%;}
+        .col-9{width: 75%;}
+        .col-10{width: 83.33%;}
+        .col-11{width: 91.66%;}
+        .col-12{width: 100%;}
+        
+        /* kolonların yan yana yaslanması için seçici tanımlaması*/
+        [class*="col-"]{
+            float:left;
+            padding: 15px;
+            border: 1px solid lightgrey;
+        }
+        /* satırların yan yan gelmemesi  ve satırların temizlenmesi için tanımlama*/
+        .row::after{
+            content: "";
+            clear: both;
+            display: table;;
+        }
+        /*resim bulunduğu kutunun genişliğinde olaması için tanımlama*/
+        img{
+            width: 100%;
+            height: auto;
+            border: gray solid;
+            object-fit: fill;
+        }
+        /*ekran çönürlüğü için css koşulu tanımlaması*/
+        @media  screen and (max-width: 768) {
+            [class*="col-"]{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div id="row1" class="row">
+    <div id="logo" class="col-2" >
+        <img src="../images/logo.png" alt="">
+    </div>
+    <div id="anamenu" class="col-10">ANAMENU</div>
+</div>
+<div id="row2" class="row">
+    <div id="icerik" class="col-9">
+        İÇERİK
+    </div>
+    <div id="yanmenu" class="col-3">
+        YANMENU
+    </div>
+</div>
+<div id="row3" class="row">
+    <div id="altsol" class="col-4">
+        ALT SOL
+    </div>
+    <div id="altorta" class="col-4">
+        ALT ORTA
+    </div>
+    <div id="altsağ" class="col-4">
+        ALT SAĞ
+    </div>
+</div>
+</body>
+</html>
